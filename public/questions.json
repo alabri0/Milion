@@ -1,0 +1,4282 @@
+[
+  {
+    "id": 1,
+    "question": "ما هي عاصمة المملكة العربية السعودية؟",
+    "options": {"A":"الرياض","B":"جدة","C":"مكة","D":"الدمام"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 2,
+    "question": "كم عدد القارات في العالم؟",
+    "options": {"A":"5","B":"6","C":"7","D":"8"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 3,
+    "question": "ما هو أطول نهر في العالم؟",
+    "options": {"A":"نهر الأمازون","B":"نهر النيل","C":"نهر اليانغتسي","D":"نهر المسيسيبي"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 4,
+    "question": "من هو مخترع المصباح الكهربائي؟",
+    "options": {"A":"نيكولا تيسلا","B":"ألكسندر غراهام بيل","C":"توماس إديسون","D":"إسحاق نيوتن"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 5,
+    "question": "ما هو الكوكب الأقرب إلى الشمس؟",
+    "options": {"A":"الأرض","B":"المريخ","C":"الزهرة","D":"عطارد"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 6,
+    "question": "من رسم لوحة الموناليزا؟",
+    "options": {"A":"فينسنت فان جوخ","B":"بابلو بيكاسو","C":"ليوناردو دافنشي","D":"مايكل أنجلو"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 7,
+    "question": "ما هو أكبر محيط في العالم؟",
+    "options": {"A":"المحيط الأطلسي","B":"المحيط الهندي","C":"المحيط الهادئ","D":"المحيط المتجمد الشمالي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 8,
+    "question": "ما هو الحيوان الذي يُعرف بسفينة الصحراء؟",
+    "options": {"A":"الحصان","B":"الجمل","C":"الفيل","D":"الغزال"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 9,
+    "question": "كم عدد أيام الأسبوع؟",
+    "options": {"A":"6","B":"7","C":"8","D":"5"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 10,
+    "question": "ما هو لون السماء في يوم صافٍ؟",
+    "options": {"A":"أخضر","B":"أحمر","C":"أزرق","D":"أصفر"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 11,
+    "question": "ما هي أكبر دولة في العالم من حيث المساحة؟",
+    "options": {"A":"الصين","B":"كندا","C":"الولايات المتحدة","D":"روسيا"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 12,
+    "question": "ما هو الغاز الذي يتنفسه الإنسان للبقاء على قيد الحياة؟",
+    "options": {"A":"النيتروجين","B":"ثاني أكسيد الكربون","C":"الأكسجين","D":"الهيدروجين"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 13,
+    "question": "من هو أول نبي في الإسلام؟",
+    "options": {"A":"موسى","B":"عيسى","C":"آدم","D":"محمد"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 14,
+    "question": "في أي قارة تقع مصر؟",
+    "options": {"A":"آسيا","B":"أفريقيا","C":"أوروبا","D":"أستراليا"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 15,
+    "question": "ما هي عملة اليابان؟",
+    "options": {"A":"اليوان","B":"الوون","C":"الدولار","D":"الين"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 16,
+    "question": "في أي عام بدأت الحرب العالمية الثانية؟",
+    "options": {"A":"1914","B":"1929","C":"1939","D":"1945"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 17,
+    "question": "ما هي الدولة الأكثر سكاناً في العالم؟",
+    "options": {"A":"الهند","B":"الولايات المتحدة","C":"الصين","D":"إندونيسيا"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 18,
+    "question": "ما هو العنصر الكيميائي الذي رمزه 'Au'؟",
+    "options": {"A":"الفضة","B":"الأكسجين","C":"الذهب","D":"الألومنيوم"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 19,
+    "question": "ما هي أعلى قمة جبلية في العالم؟",
+    "options": {"A":"جبل كليمنجارو","B":"جبل إفرست","C":"جبل كي 2","D":"جبل مون بلان"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 20,
+    "question": "كم عدد عظام الهيكل العظمي البشري لشخص بالغ؟",
+    "options": {"A":"206","B":"216","C":"196","D":"226"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 21,
+    "question": "ما هو الاسم الكيميائي لملح الطعام؟",
+    "options": {"A":"كلوريد البوتاسيوم","B":"كلوريد الكالسيوم","C":"كلوريد الصوديوم","D":"بيكربونات الصوديوم"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 22,
+    "question": "من هو مؤلف 'ألف ليلة وليلة'؟",
+    "options": {"A":"مؤلف واحد معروف","B":"ابن المقفع","C":"الجاحظ","D":"مجموعة من المؤلفين المجهولين"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 23,
+    "question": "ما هي المادة التي يتكون منها الألماس؟",
+    "options": {"A":"الكربون","B":"السيليكون","C":"الزجاج","D":"الجرافيت"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 24,
+    "question": "في أي مدينة يقع برج بيزا المائل؟",
+    "options": {"A":"روما","B":"فلورنسا","C":"بيزا","D":"ميلانو"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 25,
+    "question": "من هو الإله الرئيسي في الميثولوجيا الإغريقية؟",
+    "options": {"A":"أبولو","B":"زيوس","C":"بوسيدون","D":"هاديس"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 26,
+    "question": "ما هي نظرية النسبية التي اشتهر بها أينشتاين؟",
+    "options": {"A":"النسبية العامة والخاصة","B":"نظرية الكم","C":"قانون الجاذبية","D":"نظرية الأوتار"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 27,
+    "question": "ما هي لغة البرازيل الرسمية؟",
+    "options": {"A":"الإسبانية","B":"الإنجليزية","C":"البرتغالية","D":"الفرنسية"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 28,
+    "question": "ما هو أسرع حيوان بري في العالم؟",
+    "options": {"A":"الأسد","B":"النمر","C":"الفهد","D":"الغزال"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 29,
+    "question": "من بنى الأهرامات في مصر؟",
+    "options": {"A":"الرومان","B":"الإغريق","C":"الفراعنة","D":"الآشوريون"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 30,
+    "question": "ما هو المعدن السائل الوحيد في درجة حرارة الغرفة؟",
+    "options": {"A":"الحديد","B":"النحاس","C":"الألومنيوم","D":"الزئبق"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 31,
+    "question": "من كتب رواية 'الحرب والسلام'؟",
+    "options": {"A":"فيودور دوستويفسكي","B":"ليو تولستوي","C":"أنطون تشيخوف","D":"نجيب محفوظ"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 32,
+    "question": "ما هي سرعة الضوء في الفراغ (تقريبًا)؟",
+    "options": {"A":"300,000 كم/ث","B":"150,000 كم/ث","C":"500,000 كم/ث","D":"1,000,000 كم/ث"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 33,
+    "question": "ما هو أصغر عدد أولي؟",
+    "options": {"A":"0","B":"1","C":"2","D":"3"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 34,
+    "question": "من هو أول إنسان مشى على سطح القمر؟",
+    "options": {"A":"يوري جاجارين","B":"باز ألدرين","C":"مايكل كولينز","D":"نيل أرمسترونج"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 35,
+    "question": "في أي عام انهار جدار برلين؟",
+    "options": {"A":"1985","B":"1989","C":"1991","D":"1993"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 36,
+    "question": "ما هو 'عدد أفوجادرو' في الكيمياء؟",
+    "options": {"A":"عدد الذرات في 12 جرام من الكربون-12","B":"عدد الكواكب في المجموعة الشمسية","C":"سرعة الصوت في الهواء","D":"ثابت بلانك"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 37,
+    "question": "من هو الفيلسوف اليوناني الذي كان تلميذًا لأفلاطون ومعلمًا للإسكندر الأكبر؟",
+    "options": {"A":"سقراط","B":"أرسطو","C":"فيثاغورس","D":"طاليس"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 38,
+    "question": "ما هو أعمق مكان في محيطات العالم؟",
+    "options": {"A":"خندق بورتوريكو","B":"خندق ماريانا","C":"خندق تونغا","D":"بحر سارجاسو"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 39,
+    "question": "ما هي 'نسبة فاي' أو 'النسبة الذهبية'؟",
+    "options": {"A":"3.14","B":"1.618","C":"2.718","D":"0.5"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 40,
+    "question": "ما هي لغة البرمجة التي تم تطوير نظام أندرويد بها بشكل أساسي؟",
+    "options": {"A":"Swift","B":"C++","C":"Java/Kotlin","D":"Python"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 41,
+    "question": "من هو مؤلف 'دون كيشوت'؟",
+    "options": {"A":"ويليام شكسبير","B":"ميغيل دي سرفانتس","C":"فيكتور هوغو","D":"تشارلز ديكنز"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 42,
+    "question": "ما هي الحضارة التي بنت مدينة ماتشو بيتشو؟",
+    "options": {"A":"المايا","B":"الأزتك","C":"الإنكا","D":"المصريون القدماء"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 43,
+    "question": "ما هو الحدث الذي يعتبر بداية للثورة الفرنسية؟",
+    "options": {"A":"إعدام الملك لويس السادس عشر","B":"اقتحام سجن الباستيل","C":"مسيرة النساء إلى فرساي","D":"عهد الإرهاب"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 44,
+    "question": "ماذا يقيس مقياس ريختر؟",
+    "options": {"A":"قوة الرياح","B":"ضغط الهواء","C":"قوة الزلازل","D":"درجة الحرارة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 45,
+    "question": "ما هو اسم المجرة التي نعيش فيها؟",
+    "options": {"A":"أندروميدا","B":"درب التبانة","C":"سومبريرو","D":"مجرة المثلث"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 46,
+    "question": "كم عدد اللاعبين في فريق كرة القدم؟",
+    "options": {"A":"9","B":"10","C":"11","D":"12"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 47,
+    "question": "من كتب مسرحية 'هاملت'؟",
+    "options": {"A":"جورج برنارد شو","B":"أوسكار وايلد","C":"ويليام شكسبير","D":"صمويل بيكيت"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 48,
+    "question": "ما هو أصل رياضة الجودو؟",
+    "options": {"A":"الصين","B":"كوريا","C":"اليابان","D":"تايلاند"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 49,
+    "question": "ما هو فيروس 'HIV'؟",
+    "options": {"A":"فيروس يسبب الانفلونزا","B":"فيروس يسبب نقص المناعة البشرية (الإيدز)","C":"فيروس يسبب الحصبة","D":"فيروس يسبب شلل الأطفال"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 50,
+    "question": "ما هو أضخم حيوان على وجه الأرض؟",
+    "options": {"A":"الفيل الأفريقي","B":"القرش الأبيض الكبير","C":"الحوت الأزرق","D":"الزرافة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 51,
+    "question": "ما هي القوة التي تبقي الكواكب في مداراتها حول الشمس؟",
+    "options": {"A":"القوة المغناطيسية","B":"الجاذبية","C":"الطرد المركزي","D":"الاحتكاك"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 52,
+    "question": "ما هي عاصمة أستراليا؟",
+    "options": {"A":"سيدني","B":"ملبورن","C":"كانبرا","D":"بيرث"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 53,
+    "question": "ما هي 'حرب المائة عام'؟",
+    "options": {"A":"حرب استمرت 100 عام بالضبط","B":"سلسلة من الصراعات بين إنجلترا وفرنسا","C":"حرب بين روما وقرطاج","D":"الحروب الصليبية"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 54,
+    "question": "ما هو العنصر الأكثر وفرة في القشرة الأرضية؟",
+    "options": {"A":"الحديد","B":"الأكسجين","C":"السيليكون","D":"الألومنيوم"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 55,
+    "question": "ما هو 'مبدأ عدم اليقين' لهايزنبرغ؟",
+    "options": {"A":"لا يمكن معرفة كل شيء","B":"لا يمكن قياس موقع وسرعة جسيم بدقة في نفس الوقت","C":"الكون يتوسع","D":"الزمن نسبي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 56,
+    "question": "كم عدد الفقرات في العمود الفقري للإنسان؟",
+    "options": {"A":"24","B":"33","C":"28","D":"30"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 57,
+    "question": "ما هي المدينة التي كانت تعرف سابقًا باسم القسطنطينية؟",
+    "options": {"A":"أثينا","B":"أنقرة","C":"إسطنبول","D":"روما"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 58,
+    "question": "ما هو أكبر حيوان ثديي في العالم؟",
+    "options": {"A":"الفيل الأفريقي", "B":"الحوت الأزرق", "C":"القرش الأبيض", "D":"الدب القطبي"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 59,
+    "question": "كم عدد الحروف في الأبجدية العربية؟",
+    "options": {"A":"26", "B":"28", "C":"30", "D":"29"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 60,
+    "question": "ما هي عملة الولايات المتحدة الأمريكية؟",
+    "options": {"A":"اليورو", "B":"الين", "C":"الدولار", "D":"الروبل"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 61,
+    "question": "ما هو الكوكب الذي يطلق عليه 'الكوكب الأحمر'؟",
+    "options": {"A":"الزهرة", "B":"المريخ", "C":"المشتري", "D":"عطارد"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 62,
+    "question": "ماذا يسمى صوت الأسد؟",
+    "options": {"A":"صهيل", "B":"مواء", "C":"زئير", "D":"نباح"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 63,
+    "question": "ما هي عاصمة فرنسا؟",
+    "options": {"A":"لندن", "B":"برلين", "C":"مدريد", "D":"باريس"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 64,
+    "question": "كم ضلعاً للمربع؟",
+    "options": {"A":"3", "B":"4", "C":"5", "D":"6"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 65,
+    "question": "ما هو الغاز الذي نخرجه عند التنفس؟",
+    "options": {"A":"الأكسجين", "B":"الهيدروجين", "C":"النيتروجين", "D":"ثاني أكسيد الكربون"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 66,
+    "question": "من هو خاتم الأنبياء في الإسلام؟",
+    "options": {"A":"عيسى", "B":"موسى", "C":"محمد", "D":"إبراهيم"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 67,
+    "question": "ما هو لون الموز الناضج؟",
+    "options": {"A":"أخضر", "B":"أصفر", "C":"أحمر", "D":"أزرق"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 68,
+    "question": "ما هي الحاسة التي نستخدمها للشم؟",
+    "options": {"A":"السمع", "B":"البصر", "C":"الشم", "D":"اللمس"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 69,
+    "question": "كم عدد الأصابع في اليد الواحدة؟",
+    "options": {"A":"4", "B":"5", "C":"6", "D":"10"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 70,
+    "question": "ما هو الشيء الذي نستخدمه للكتابة على الورق؟",
+    "options": {"A":"ملعقة", "B":"قلم", "C":"شوكة", "D":"مفتاح"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 71,
+    "question": "ما هي عاصمة مصر؟",
+    "options": {"A":"الإسكندرية", "B":"الأقصر", "C":"القاهرة", "D":"أسوان"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 72,
+    "question": "ما هي أكبر صحراء حارة في العالم؟",
+    "options": {"A":"صحراء غوبي", "B":"الصحراء العربية", "C":"الصحراء الكبرى", "D":"صحراء كالاهاري"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 73,
+    "question": "ما هو شهر الصيام عند المسلمين؟",
+    "options": {"A":"شوال", "B":"رمضان", "C":"رجب", "D":"محرم"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 74,
+    "question": "ماذا يسمى بيت الدجاجة؟",
+    "options": {"A":"عرين", "B":"إصطبل", "C":"قن", "D":"خلية"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 75,
+    "question": "ما هو صوت الحصان؟",
+    "options": {"A":"صهيل", "B":"نهيق", "C":"خوار", "D":"ثغاء"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 76,
+    "question": "ما هو الكوكب الذي نعيش عليه؟",
+    "options": {"A":"المريخ", "B":"الزهرة", "C":"الأرض", "D":"المشتري"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 77,
+    "question": "كم عدد الساعات في اليوم؟",
+    "options": {"A":"12", "B":"24", "C":"30", "D":"60"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 78,
+    "question": "ما هو لون الدم؟",
+    "options": {"A":"أزرق", "B":"أخضر", "C":"أحمر", "D":"أصفر"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 79,
+    "question": "ما هي الأداة التي نستخدمها لقياس درجة الحرارة؟",
+    "options": {"A":"المسطرة", "B":"الساعة", "C":"ميزان الحرارة", "D":"البوصلة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 80,
+    "question": "ما هو أضخم عضو في جسم الإنسان؟",
+    "options": {"A":"الكبد", "B":"الدماغ", "C":"القلب", "D":"الجلد"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 81,
+    "question": "ما هي عاصمة إيطاليا؟",
+    "options": {"A":"روما", "B":"ميلانو", "C":"نابولي", "D":"البندقية"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 82,
+    "question": "ما هي عاصمة إسبانيا؟",
+    "options": {"A":"برشلونة", "B":"مدريد", "C":"إشبيلية", "D":"فالنسيا"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 83,
+    "question": "ما هي عملة المملكة المتحدة؟",
+    "options": {"A":"الدولار", "B":"اليورو", "C":"الجنيه الإسترليني", "D":"الفرنك"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 84,
+    "question": "ما هو الطائر الذي لا يطير؟",
+    "options": {"A":"النسر", "B":"البطريق", "C":"الحمامة", "D":"الصقر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 85,
+    "question": "ماذا يسمى صغير الحصان؟",
+    "options": {"A":"جحش", "B":"حمل", "C":"مهر", "D":"جرو"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 86,
+    "question": "ماذا يسمى صغير البقرة؟",
+    "options": {"A":"عجل", "B":"خروف", "C":"جدي", "D":"قط"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 87,
+    "question": "ما هو أول يوم في الأسبوع في معظم الدول العربية؟",
+    "options": {"A":"السبت", "B":"الأحد", "C":"الإثنين", "D":"الجمعة"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 88,
+    "question": "ما هو الفصل الذي تتساقط فيه أوراق الشجر؟",
+    "options": {"A":"الربيع", "B":"الصيف", "C":"الخريف", "D":"الشتاء"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 89,
+    "question": "ما هو لون الثلج؟",
+    "options": {"A":"شفاف", "B":"أزرق", "C":"رمادي", "D":"أبيض"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 90,
+    "question": "في أي مدينة يقع برج إيفل؟",
+    "options": {"A":"لندن", "B":"روما", "C":"باريس", "D":"برلين"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 91,
+    "question": "ما هو لون الليمون؟",
+    "options": {"A":"أخضر", "B":"برتقالي", "C":"أصفر", "D":"أحمر"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 92,
+    "question": "ما هو أطول حيوان بري؟",
+    "options": {"A":"الفيل", "B":"الزرافة", "C":"فرس النهر", "D":"التمساح"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 93,
+    "question": "كم عدد ألوان قوس قزح؟",
+    "options": {"A":"5", "B":"6", "C":"7", "D":"8"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 94,
+    "question": "ما هو الشيء الذي إذا غليته تجمد؟",
+    "options": {"A":"الماء", "B":"الحليب", "C":"البيض", "D":"الزيت"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 95,
+    "question": "ما هو البحر الذي يفصل بين أوروبا وأفريقيا؟",
+    "options": {"A":"البحر الأحمر", "B":"البحر الأسود", "C":"البحر الأبيض المتوسط", "D":"بحر قزوين"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 96,
+    "question": "ما هي القارة القطبية الجنوبية؟",
+    "options": {"A":"أستراليا", "B":"أنتاركتيكا", "C":"جرينلاند", "D":"أركتيكا"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 97,
+    "question": "ما هي عاصمة ألمانيا؟",
+    "options": {"A":"ميونخ", "B":"هامبورغ", "C":"برلين", "D":"فرانكفورت"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 98,
+    "question": "ما هي الحشرة التي تنتج العسل؟",
+    "options": {"A":"الذبابة", "B":"النملة", "C":"النحلة", "D":"الصرصور"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 99,
+    "question": "ما هي عاصمة روسيا؟",
+    "options": {"A":"سانت بطرسبرغ", "B":"موسكو", "C":"قازان", "D":"سوتشي"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "geography"
+  },
+  {
+    "id": 100,
+    "question": "ما هو أثقل حيوان بري؟",
+    "options": {"A":"وحيد القرن", "B":"فرس النهر", "C":"الفيل الأفريقي", "D":"الدب البني"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "science"
+  },
+  {
+    "id": 101,
+    "question": "ما هو لون سيارات الأجرة في نيويورك؟",
+    "options": {"A":"أحمر", "B":"أصفر", "C":"أسود", "D":"أبيض"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 102,
+    "question": "من هو الشخصية الرئيسية في سلسلة أفلام هاري بوتر؟",
+    "options": {"A":"رون ويزلي", "B":"هيرميوني جرينجر", "C":"ألبوس دمبلدور", "D":"هاري بوتر"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 103,
+    "question": "من هو العالم الذي اكتشف البنسلين؟",
+    "options": {"A":"لويس باستور", "B":"ألكسندر فليمنغ", "C":"روبرت كوخ", "D":"جوزيف ليستر"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 104,
+    "question": "ما هي الدولة التي تشتهر بصناعة الساعات الفاخرة؟",
+    "options": {"A":"ألمانيا", "B":"اليابان", "C":"سويسرا", "D":"فرنسا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 105,
+    "question": "ما هو الاسم العلمي للماء؟",
+    "options": {"A":"CO2", "B":"O2", "C":"NaCl", "D":"H2O"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 106,
+    "question": "ما هي أطول سلسلة جبال في العالم؟",
+    "options": {"A":"جبال الهيمالايا", "B":"جبال الأنديز", "C":"جبال روكي", "D":"جبال الألب"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 107,
+    "question": "من هو الرئيس الأول للولايات المتحدة الأمريكية؟",
+    "options": {"A":"توماس جيفرسون", "B":"أبراهام لينكولن", "C":"جورج واشنطن", "D":"جون آدامز"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 108,
+    "question": "في أي دولة يوجد سور الصين العظيم؟",
+    "options": {"A":"اليابان", "B":"الصين", "C":"كوريا الجنوبية", "D":"منغوليا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 109,
+    "question": "ما هو الكوكب الذي يشتهر بحلقاته؟",
+    "options": {"A":"المشتري", "B":"أورانوس", "C":"نبتون", "D":"زحل"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 110,
+    "question": "ما هي الدولة التي قدمت تمثال الحرية هدية لأمريكا؟",
+    "options": {"A":"بريطانيا", "B":"إسبانيا", "C":"فرنسا", "D":"ألمانيا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 111,
+    "question": "ما هي أصغر دولة في العالم؟",
+    "options": {"A":"موناكو", "B":"ناورو", "C":"الفاتيكان", "D":"سان مارينو"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 112,
+    "question": "من هو مخترع الهاتف؟",
+    "options": {"A":"توماس إديسون", "B":"ألكسندر غراهام بيل", "C":"نيكولا تيسلا", "D":"جولييلمو ماركوني"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 113,
+    "question": "ما هي أكبر جزيرة في العالم؟",
+    "options": {"A":"بورنيو", "B":"مدغشقر", "C":"جرينلاند", "D":"غينيا الجديدة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 114,
+    "question": "ما هو المرض الذي يسببه نقص فيتامين سي؟",
+    "options": {"A":"الكساح", "B":"البلاجرا", "C":"البري بري", "D":"الإسقربوط"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 115,
+    "question": "ما هو الكوكب الأكبر في مجموعتنا الشمسية؟",
+    "options": {"A":"زحل", "B":"المشتري", "C":"نبتون", "D":"الأرض"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 116,
+    "question": "من هو مؤلف ملحمة الإلياذة والأوديسة؟",
+    "options": {"A":"سوفوكليس", "B":"أفلاطون", "C":"هوميروس", "D":"أرسطو"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 117,
+    "question": "ما هو المضيق الذي يربط البحر الأبيض المتوسط بالمحيط الأطلسي؟",
+    "options": {"A":"مضيق هرمز", "B":"مضيق باب المندب", "C":"مضيق جبل طارق", "D":"مضيق البوسفور"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 118,
+    "question": "ما هي القناة التي تربط البحر الأحمر بالبحر الأبيض المتوسط؟",
+    "options": {"A":"قناة بنما", "B":"قناة السويس", "C":"قناة كيل", "D":"قناة إيري"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 119,
+    "question": "من هو الرسام الهولندي الذي قطع أذنه؟",
+    "options": {"A":"رامبرانت", "B":"يوهانس فيرمير", "C":"فينسنت فان جوخ", "D":"بيتر بول روبنز"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 120,
+    "question": "ما هي الدولة التي كانت تسمى بلاد فارس؟",
+    "options": {"A":"العراق", "B":"تركيا", "C":"إيران", "D":"أفغانستان"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 121,
+    "question": "ما هي أكبر غابة مطيرة في العالم؟",
+    "options": {"A":"غابات الكونغو", "B":"غابات الأمازون", "C":"غابات فالديفيان", "D":"غابات دينتري"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 122,
+    "question": "كم عدد فقرات عنق الزرافة؟",
+    "options": {"A":"7", "B":"12", "C":"15", "D":"20"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 123,
+    "question": "ما هي أندر فصيلة دم بين البشر؟",
+    "options": {"A":"O+", "B":"A-", "C":"B+", "D":"AB-"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 124,
+    "question": "ما هو اسم أول قمر صناعي تم إطلاقه في الفضاء؟",
+    "options": {"A":"إكسبلورر 1", "B":"سبوتنيك 1", "C":"فانغارد 1", "D":"لونا 1"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 125,
+    "question": "من هو القائد العسكري الفرنسي الشهير الذي أصبح إمبراطوراً؟",
+    "options": {"A":"لويس الرابع عشر", "B":"شارلمان", "C":"نابليون بونابرت", "D":"شارل ديغول"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 126,
+    "question": "ما هي وحدة قياس شدة التيار الكهربائي؟",
+    "options": {"A":"الفولت", "B":"الواط", "C":"الأوم", "D":"الأمبير"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 127,
+    "question": "ما هي عاصمة كندا؟",
+    "options": {"A":"تورونتو", "B":"مونتريال", "C":"فانكوفر", "D":"أوتاوا"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 128,
+    "question": "ما هو أصل الألعاب الأولمبية؟",
+    "options": {"A":"روما القديمة", "B":"مصر القديمة", "C":"اليونان القديمة", "D":"الصين القديمة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 129,
+    "question": "من هي العالمة التي اكتشفت الراديوم والبولونيوم؟",
+    "options": {"A":"روزاليند فرانكلين", "B":"ماري كوري", "C":"ليز مايتنر", "D":"إيرين جوليو-كوري"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 130,
+    "question": "ما هي أعلى شلالات في العالم؟",
+    "options": {"A":"شلالات نياجرا", "B":"شلالات فيكتوريا", "C":"شلالات آنجل", "D":"شلالات إجوازو"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 131,
+    "question": "ما هي عاصمة اليونان؟",
+    "options": {"A":"سبارطة", "B":"أثينا", "C":"سالونيك", "D":"كورنث"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 132,
+    "question": "ما هي المادة التي تعطي النباتات لونها الأخضر؟",
+    "options": {"A":"الكاروتين", "B":"الأنثوسيانين", "C":"الكلوروفيل", "D":"الزانثوفيل"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 133,
+    "question": "ما هي أكبر بحيرة للمياه العذبة في العالم من حيث المساحة؟",
+    "options": {"A":"بحيرة فيكتوريا", "B":"بحيرة بايكال", "C":"بحيرة سوبيريور", "D":"بحيرة ميشيغان"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 134,
+    "question": "من يلقب بـ 'والد القنبلة الذرية'؟",
+    "options": {"A":"ألبرت أينشتاين", "B":"إنريكو فيرمي", "C":"روبرت أوبنهايمر", "D":"نيلز بور"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 135,
+    "question": "ما هي اللغة الأكثر تحدثًا في العالم كلغة أم؟",
+    "options": {"A":"الإنجليزية", "B":"الإسبانية", "C":"الهندية", "D":"الماندرين الصينية"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 136,
+    "question": "ما هي المدينة الإيطالية التي دمرها بركان فيزوف عام 79 م؟",
+    "options": {"A":"روما", "B":"بومبي", "C":"نابولي", "D":"فلورنسا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 137,
+    "question": "ما هو أصل رقصة التانغو؟",
+    "options": {"A":"البرازيل", "B":"كوبا", "C":"الأرجنتين", "D":"إسبانيا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 138,
+    "question": "ما هي أشهر لوحات سلفادور دالي؟",
+    "options": {"A":"غيرنيكا", "B":"إصرار الذاكرة", "C":"ليلة النجوم", "D":"الموناليزا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 139,
+    "question": "ما هو اسم المركبة الفضائية التي هبطت بأول إنسان على سطح القمر؟",
+    "options": {"A":"أبولو 11", "B":"فوستوك 1", "C":"ميركوري 7", "D":"سبوتنيك 2"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 140,
+    "question": "في أي رياضة يستخدم مصطلح 'الضربة القاضية'؟",
+    "options": {"A":"كرة القدم", "B":"المصارعة", "C":"الملاكمة", "D":"الكاراتيه"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 141,
+    "question": "من هو مخترع شبكة الويب العالمية (WWW)؟",
+    "options": {"A":"بيل غيتس", "B":"ستيف جوبز", "C":"تيم بيرنرز لي", "D":"فينت سيرف"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 142,
+    "question": "ما هي المدينة التي يطلق عليها 'المدينة الوردية'؟",
+    "options": {"A":"مراكش", "B":"جايبور", "C":"البتراء", "D":"قرطبة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 143,
+    "question": "ما هو الكوكب الذي يدور على جانبه؟",
+    "options": {"A":"نبتون", "B":"أورانوس", "C":"زحل", "D":"المشتري"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 144,
+    "question": "ما هو الاسم الذي يطلق على الخوف من الأماكن المغلقة؟",
+    "options": {"A":"أغورافوبيا", "B":"أكروفوبيا", "C":"كلوستروفوبيا", "D":"أراكنوفوبيا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 145,
+    "question": "من هو أول من طاف حول العالم؟",
+    "options": {"A":"كريستوفر كولومبوس", "B":"جيمس كوك", "C":"فاسكو دا غاما", "D":"فرديناند ماجلان"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 146,
+    "question": "ما هي أكبر صحراء جليدية في العالم؟",
+    "options": {"A":"القطب الشمالي", "B":"أنتاركتيكا", "C":"جرينلاند", "D":"سيبيريا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 147,
+    "question": "من هو لاعب كرة السلة الذي يعتبره الكثيرون الأعظم في كل العصور؟",
+    "options": {"A":"ليبرون جيمس", "B":"كريم عبد الجبار", "C":"مايكل جوردان", "D":"كوبي براينت"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 148,
+    "question": "ما هي الدولة صاحبة أكبر عدد من البراكين النشطة؟",
+    "options": {"A":"اليابان", "B":"إندونيسيا", "C":"الولايات المتحدة", "D":"تشيلي"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 149,
+    "question": "ما هو الاسم الآخر لفيتامين سي؟",
+    "options": {"A":"حمض الفوليك", "B":"حمض الأسكوربيك", "C":"الريتينول", "D":"الريبوفلافين"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 150,
+    "question": "كم عدد الدول التي تعترف بها الأمم المتحدة حاليًا؟",
+    "options": {"A":"183", "B":"206", "C":"193", "D":"175"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 151,
+    "question": "ما هي عاصمة نيوزيلندا؟",
+    "options": {"A":"أوكلاند", "B":"ويلينغتون", "C":"كريستشيرش", "D":"كوينزتاون"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 152,
+    "question": "ما هو أكبر ميناء في العالم من حيث حركة الشحن؟",
+    "options": {"A":"ميناء سنغافورة", "B":"ميناء روتردام", "C":"ميناء شنغهاي", "D":"ميناء بوسان"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "geography"
+  },
+  {
+    "id": 153,
+    "question": "ما هو الاسم الكيميائي لفيتامين B12؟",
+    "options": {"A":"البيوتين", "B":"حمض البانتوثينيك", "C":"النياسين", "D":"كوبالامين"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 154,
+    "question": "من هو الفيلسوف الذي قال 'أنا أفكر، إذن أنا موجود'؟",
+    "options": {"A":"أفلاطون", "B":"أرسطو", "C":"رينيه ديكارت", "D":"إيمانويل كانط"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 155,
+    "question": "ما هي المعركة التي هُزم فيها نابليون بونابرت هزيمته النهائية؟",
+    "options": {"A":"معركة أوسترليتز", "B":"معركة لايبزيغ", "C":"معركة واترلو", "D":"معركة بورودينو"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 156,
+    "question": "ما هو 'بوزون هيغز'؟",
+    "options": {"A":"نوع من الكواركات", "B":"جسيم أولي مسؤول عن الكتلة", "C":"جسيم افتراضي أسرع من الضوء", "D":"وحدة بناء المادة المظلمة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 157,
+    "question": "ما هي أول رواية في التاريخ (حسب بعض المؤرخين)؟",
+    "options": {"A":"دون كيشوت", "B":"حكاية جينجي", "C":"ملحمة جلجامش", "D":"الإلياذة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 158,
+    "question": "ما هي الدولة الوحيدة التي تقع بالكامل فوق ارتفاع 1000 متر عن سطح البحر؟",
+    "options": {"A":"بوتان", "B":"نيبال", "C":"ليسوتو", "D":"أندورا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 159,
+    "question": "من هو الملحن الأصم الذي ألف بعضاً من أعظم المقطوعات الموسيقية الكلاسيكية؟",
+    "options": {"A":"موزارت", "B":"باخ", "C":"بيتهوفن", "D":"شوبان"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 160,
+    "question": "ما هو 'ثابت بلانك'؟",
+    "options": {"A":"ثابت يربط طاقة الفوتون بتردده", "B":"سرعة الضوء في الفراغ", "C":"ثابت الجاذبية", "D":"شحنة الإلكترون"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 161,
+    "question": "ما هو أندر عنصر طبيعي على الأرض؟",
+    "options": {"A":"الروديوم", "B":"الأوزميوم", "C":"الأستاتين", "D":"الفرانسيوم"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 162,
+    "question": "من قاد مشروع بناء قناة بنما الأمريكي وأكمله؟",
+    "options": {"A":"فرديناند ديليسبس", "B":"جورج واشنطن غوثالز", "C":"جون فندلي والاس", "D":"ثيودور روزفلت"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 163,
+    "question": "ما هي 'مفارقة التوأم' في نظرية النسبية الخاصة؟",
+    "options": {"A":"توأمان يولدان في يومين مختلفين", "B":"تأثير تباطؤ الزمن على مسافر فضائي", "C":"توأمان متطابقان بسلوك مختلف", "D":"مفارقة حول السفر عبر الزمن"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 164,
+    "question": "ما هو أقدم برلمان مستمر في العالم؟",
+    "options": {"A":"برلمان المملكة المتحدة", "B":"برلمان آيسلندا 'ألثينغي'", "C":"برلمان جزيرة مان 'تينوالد'", "D":"الكونغرس الأمريكي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 165,
+    "question": "ما هي لغة 'الباسك'؟",
+    "options": {"A":"لهجة من الإسبانية", "B":"لغة رومانسية قديمة", "C":"لغة معزولة لا تشبه أي لغة أخرى", "D":"لغة جرمانية"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 166,
+    "question": "من هو العالم الذي وضع قوانين حركة الكواكب الثلاثة؟",
+    "options": {"A":"غاليليو غاليلي", "B":"إسحاق نيوتن", "C":"يوهانس كيبلر", "D":"نيكولاس كوبرنيكوس"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 167,
+    "question": "ما هي 'فرضية ريمان'؟",
+    "options": {"A":"نظرية حول أصل الكون", "B":"حدسية حول توزيع الأعداد الأولية", "C":"قانون في الديناميكا الحرارية", "D":"مبدأ في ميكانيكا الكم"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 168,
+    "question": "من هو الكاتب الأيرلندي الذي كتب رواية 'عوليس' (Ulysses)؟",
+    "options": {"A":"أوسكار وايلد", "B":"صمويل بيكيت", "C":"جورج برنارد شو", "D":"جيمس جويس"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 169,
+    "question": "ما هو 'تأثير كازيمير'؟",
+    "options": {"A":"قوة تنشأ بسبب تقلبات الفراغ الكمومي", "B":"تأثير الحقول المغناطيسية على الضوء", "C":"ظاهرة تبريد الذرات بالليزر", "D":"ميل السوائل للارتفاع في الأنابيب الضيقة"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 170,
+    "question": "ما هي 'أقراص فايستوس'؟",
+    "options": {"A":"عملة يونانية قديمة", "B":"تقويم من حضارة المايا", "C":"قرص طيني عليه كتابة لم تفك شفرتها", "D":"أداة فلكية من بابل"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 171,
+    "question": "ما هو الاسم الذي يطلق على دراسة الحشرات؟",
+    "options": {"A":"علم الطيور", "B":"علم الحشرات", "C":"علم الأسماك", "D":"علم الزواحف"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 172,
+    "question": "من هو الاقتصادي الذي ألف كتاب 'ثروة الأمم'؟",
+    "options": {"A":"كارل ماركس", "B":"جون ماينارد كينز", "C":"آدم سميث", "D":"ميلتون فريدمان"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 173,
+    "question": "ما هي 'متلازمة ستوكهولم'؟",
+    "options": {"A":"الخوف من الأماكن العامة", "B":"تعاطف الرهينة مع الخاطف", "C":"فقدان الذاكرة بعد صدمة", "D":"اضطراب النوم"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 174,
+    "question": "ما هو أطول عصب في جسم الإنسان؟",
+    "options": {"A":"العصب البصري", "B":"العصب المبهم", "C":"العصب الوركي", "D":"العصب الوجهي"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 175,
+    "question": "من هو أول أمين عام للأمم المتحدة؟",
+    "options": {"A":"داغ همرشولد", "B":"يو ثانت", "C":"كورت فالدهايم", "D":"تريغفي لي"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 176,
+    "question": "ما هي أقسى مادة طبيعية معروفة؟",
+    "options": {"A":"الجرافين", "B":"الألماس", "C":"الياقوت", "D":"الكوروندوم"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 177,
+    "question": "ما هو 'التشابك الكمومي'؟",
+    "options": {"A":"اندماج جسيمين في جسيم واحد", "B":"ظاهرة ارتباط مصائر جسيمات كمومية", "C":"انتقال المادة من حالة إلى أخرى", "D":"نظرية حول الأكوان المتعددة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 178,
+    "question": "ما هي الدولة التي لديها أكبر عدد من المناطق الزمنية؟",
+    "options": {"A":"روسيا", "B":"الولايات المتحدة", "C":"فرنسا", "D":"الصين"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 179,
+    "question": "ما هي أول جامعة تأسست في العالم الغربي؟",
+    "options": {"A":"جامعة أكسفورد", "B":"جامعة كامبريدج", "C":"جامعة بولونيا", "D":"جامعة السوربون"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 180,
+    "question": "ما هي العملية التي يتم فيها تحويل المادة الصلبة مباشرة إلى غاز؟",
+    "options": {"A":"التبخر", "B":"التكثف", "C":"التسامي", "D":"الانصهار"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 181,
+    "question": "من هو الملك البابلي الذي اشتهر بشريعته (قوانينه) المكتوبة؟",
+    "options": {"A":"نبوخذ نصر الثاني", "B":"حمورابي", "C":"سرجون الأكدي", "D":"آشوربانيبال"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 182,
+    "question": "ما هو 'تأثير دوبلر'؟",
+    "options": {"A":"تغير في تردد الموجة بسبب حركة المصدر", "B":"انحناء الضوء حول الأجسام الضخمة", "C":"مقاومة الموصل للتيار الكهربائي", "D":"انبعاث الإلكترونات عند سقوط الضوء على مادة"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 183,
+    "question": "من هو عالم النفس الذي طور مفهوم 'اللاوعي الجماعي'؟",
+    "options": {"A":"سيغموند فرويد", "B":"كارل يونغ", "C":"ألفريد أدلر", "D":"إيفان بافلوف"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 184,
+    "question": "ما هو الحيوان الذي لديه أعلى ضغط دم؟",
+    "options": {"A":"الفيل", "B":"الحوت الأزرق", "C":"الزرافة", "D":"فرس النهر"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 185,
+    "question": "ما هو اسم المركبة الجوالة التي هبطت على المريخ في فبراير 2021؟",
+    "options": {"A":"كيوريوسيتي", "B":"سبيريت", "C":"برسيفيرنس", "D":"أبورتيونيتي"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 186,
+    "question": "من هو الطبيب الذي أجرى أول عملية زراعة قلب بشري ناجحة؟",
+    "options": {"A":"مايكل دبغي", "B":"نورمان شمواي", "C":"كريستيان برنارد", "D":"دينتون كولي"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 187,
+    "question": "ما هي أصغر عظمة في جسم الإنسان؟",
+    "options": {"A":"السلامى", "B":"العظم الأنفي", "C":"عظمة الركاب", "D":"العظم الدمعي"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 188,
+    "question": "ما هي معاهدة 'وستفاليا'؟",
+    "options": {"A":"معاهدة أنهت الحرب العالمية الأولى", "B":"معاهدة أسست الاتحاد الأوروبي", "C":"معاهدة أنهت حرب الثلاثين عامًا", "D":"معاهدة قسمت الإمبراطورية الرومانية"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 189,
+    "question": "ما هو أكبر بركان نشط في العالم؟",
+    "options": {"A":"جبل إتنا", "B":"جبل فوجي", "C":"ماونا لوا", "D":"جبل سانت هيلينز"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 190,
+    "question": "ما هو الكائن الحي الذي لا يموت بيولوجياً (يمكن أن يعود إلى مرحلة الشباب)؟",
+    "options": {"A":"جراد البحر", "B":"سمكة القرش جرينلاند", "C":"قنديل البحر الخالد", "D":"الهايدرا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 191,
+    "question": "من هما العالمان اللذان ينسب إليهما اكتشاف بنية الحمض النووي (DNA)؟",
+    "options": {"A":"لينيوس بولينغ وروبرت كوري", "B":"روزاليند فرانكلين وموريس ويلكنز", "C":"جيمس واتسون وفرانسيس كريك", "D":"فريدريك سانجر ووالتر غيلبرت"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 192,
+    "question": "ما هي 'تجربة شقي يونغ'؟",
+    "options": {"A":"تجربة لإثبات الطبيعة المزدوجة للضوء", "B":"تجربة لقياس شحنة الإلكترون", "C":"تجربة لإثبات وجود النيوترون", "D":"تجربة لإثبات نظرية النسبية"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 193,
+    "question": "ما هي أقدم لغة مكتوبة معروفة؟",
+    "options": {"A":"الهيروغليفية المصرية", "B":"السومرية", "C":"الأكادية", "D":"الصينية القديمة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 194,
+    "question": "ما هو 'رقم دنبار'؟",
+    "options": {"A":"أقصى سرعة يمكن للإنسان الوصول إليها", "B":"حد معرفي لعدد العلاقات الاجتماعية المستقرة", "C":"عدد النجوم في مجرتنا", "D":"ثابت رياضي يتعلق بالكسيريات"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 195,
+    "question": "ما هي نظرية الفوضى (Chaos Theory)؟",
+    "options": {"A":"نظرية تقول أن الكون يتجه نحو الفوضى", "B":"فرع من الرياضيات يدرس الأنظمة شديدة الحساسية للظروف الأولية", "C":"نظرية نفسية عن انهيار الشخصية", "D":"نظرية اجتماعية عن انهيار الحضارات"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 196,
+    "question": "ما هو العنصر الكيميائي الذي سُمي على اسم عالم؟",
+    "options": {"A":"الهيليوم", "B":"الليثيوم", "C":"الكوريوم", "D":"النيون"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "science"
+  },
+  {
+    "id": 197,
+    "question": "في أي مدينة تم توقيع معاهدة تأسيس حلف شمال الأطلسي (الناتو)؟",
+    "options": {"A":"لندن", "B":"باريس", "C":"بروكسل", "D":"واشنطن العاصمة"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 198,
+    "question": "ما هو 'طريق الحرير'؟",
+    "options": {"A":"طريق تجاري قديم يربط بين الصين والبحر الأبيض المتوسط", "B":"نوع من أنواع النسيج الفاخر", "C":"طريق هجرة الطيور السنوي", "D":"مسار بحري كان يستخدمه الفايكنج"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 199,
+    "question": "ما هو الاسم الآخر لكوكب الزهرة؟",
+    "options": {"A":"نجمة الصباح", "B":"الكوكب القزم", "C":"عملاق الغاز", "D":"نجم الشمال"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "science"
+  },
+  {
+    "id": 200,
+    "question": "ما هو مفهوم 'اليد الخفية' في الاقتصاد؟",
+    "options": {"A":"التدخل الحكومي في السوق", "B":"آلية غير مرئية تنظم السوق الحر", "C":"التهرب الضريبي للشركات الكبرى", "D":"الاحتكارات التي تسيطر على الأسعار"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "history"
+  },
+  {
+    "id": 201,
+    "question": "ما هو اسم القارة العظمى التي كانت موجودة قبل حوالي 300 مليون سنة؟",
+    "options": {"A":"غوندوانا", "B":"لوراسيا", "C":"بانجيا", "D":"رودينيا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 202,
+    "question": "ما هما البلدان اللذان يتشاركان أطول حدود دولية في العالم؟",
+    "options": {"A":"روسيا والصين", "B":"كندا والولايات المتحدة", "C":"الأرجنتين وتشيلي", "D":"الهند وبنغلاديش"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 203,
+    "question": "ما هي الدولة الوحيدة التي هي أيضاً قارة؟",
+    "options": {"A":"جرينلاند", "B":"أيسلندا", "C":"مدغشقر", "D":"أستراليا"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 204,
+    "question": "ما هو اسم المضيق الذي يفصل آسيا عن أمريكا الشمالية؟",
+    "options": {"A":"مضيق ماجلان", "B":"مضيق جبل طارق", "C":"مضيق بيرينغ", "D":"مضيق هرمز"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 205,
+    "question": "أي دولة أفريقية لديها أكبر عدد من الأهرامات؟",
+    "options": {"A":"مصر", "B":"السودان", "C":"ليبيا", "D":"الجزائر"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 206,
+    "question": "الربع الخالي هو منطقة صحراوية شاسعة تقع في أي شبه جزيرة؟",
+    "options": {"A":"شبه جزيرة سيناء", "B":"شبه الجزيرة العربية", "C":"شبه جزيرة الأناضول", "D":"شبه الجزيرة الهندية"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 207,
+    "question": "ما هو المصطلح الذي يطلق على جزيرة مرجانية حلقية الشكل؟",
+    "options": {"A":"أرخبيل", "B":"أتول", "C":"رأس", "D":"برزخ"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 208,
+    "question": "أي نهر يتدفق عبر الغراند كانيون؟",
+    "options": {"A":"نهر المسيسيبي", "B":"نهر كولورادو", "C":"نهر ميزوري", "D":"نهر ريو غراندي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 209,
+    "question": "تقع بحيرة تيتيكاكا على حدود أي بلدين في أمريكا الجنوبية؟",
+    "options": {"A":"البرازيل والأرجنتين", "B":"كولومبيا وفنزويلا", "C":"بيرو وبوليفيا", "D":"تشيلي وبيرو"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 210,
+    "question": "ما هي العاصمة الواقعة في أقصى شمال العالم؟",
+    "options": {"A":"أوسلو", "B":"هلسنكي", "C":"ريكيافيك", "D":"ستوكهولم"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 211,
+    "question": "في أي بلد تجد مدينة تمبكتو القديمة؟",
+    "options": {"A":"نيجيريا", "B":"مالي", "C":"السنغال", "D":"غانا"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 212,
+    "question": "ما هي الدولة الأقل كثافة سكانية في العالم؟",
+    "options": {"A":"أيسلندا", "B":"أستراليا", "C":"ناميبيا", "D":"منغوليا"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "geography"
+  },
+  {
+    "id": 213,
+    "question": "من كتب 'القطة في القبعة'؟",
+    "options": {"A":"رولد دال", "B":"دكتور سوس", "C":"إريك كارل", "D":"موريس سينداك"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 214,
+    "question": "في قصة 'سندريلا'، مم صنع حذاؤها؟",
+    "options": {"A":"الذهب", "B":"الفضة", "C":"الزجاج", "D":"الجلد"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 215,
+    "question": "من هو الصبي الذي لا يكبر أبداً؟",
+    "options": {"A":"توم سوير", "B":"بيتر بان", "C":"هاري بوتر", "D":"علاء الدين"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 216,
+    "question": "ما هو لون رداء سوبرمان؟",
+    "options": {"A":"أزرق", "B":"أحمر", "C":"أصفر", "D":"أسود"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 217,
+    "question": "ما هو اسم الشبل الشهير في فيلم 'الأسد الملك'؟",
+    "options": {"A":"موفاسا", "B":"سكار", "C":"سيمبا", "D":"تيمون"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 218,
+    "question": "ما نوع الفاكهة المسمومة التي أكلتها بياض الثلج؟",
+    "options": {"A":"برتقالة", "B":"موزة", "C":"تفاحة", "D":"إجاصة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 219,
+    "question": "من رسم لوحة 'ليلة النجوم'؟",
+    "options": {"A":"كلود مونيه", "B":"بابلو بيكاسو", "C":"فينسنت فان جوخ", "D":"ليوناردو دافنشي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 220,
+    "question": "من هو مؤلف سلسلة هاري بوتر؟",
+    "options": {"A":"جورج ر. ر. مارتن", "B":"ج. ك. رولينغ", "C":"ج. ر. ر. تولكين", "D":"سي. إس. لويس"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 221,
+    "question": "ما هو اسم الدمية الخشبية التي تريد أن تصبح فتى حقيقياً؟",
+    "options": {"A":"جيبتو", "B":"جيمي كريكت", "C":"بينوكيو", "D":"سترومبولي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 222,
+    "question": "ما هو اسم راعي البقر في فيلم 'حكاية لعبة'؟",
+    "options": {"A":"باز يطير", "B":"آندي", "C":"وودي", "D":"سلينكي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 223,
+    "question": "أي فنان اشتهر بلوحات 'علب حساء كامبل'؟",
+    "options": {"A":"روي ليختنشتاين", "B":"آندي وارهول", "C":"جان ميشيل باسكيات", "D":"كيث هارينغ"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 224,
+    "question": "ما هو اسم الشخصية الرئيسية في 'مغامرات أليس في بلاد العجائب'؟",
+    "options": {"A":"الملكة", "B":"الأرنب", "C":"أليس", "D":"صانع القبعات"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 225,
+    "question": "من كتب المسرحية الشهيرة 'روميو وجولييت'؟",
+    "options": {"A":"كريستوفر مارلو", "B":"ويليام شكسبير", "C":"بن جونسون", "D":"جون ويبستر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 226,
+    "question": "من هو الساحر الشهير في 'سيد الخواتم'؟",
+    "options": {"A":"سارومان", "B":"ساورون", "C":"غاندالف", "D":"راداجاست"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "art-literature"
+  },
+  {
+    "id": 227,
+    "question": "في رواية جورج أورويل '1984'، ما اسم القائد الحاضر في كل مكان؟",
+    "options": {"A":"الأخ الأكبر", "B":"إيمانويل غولدشتاين", "C":"أوبراين", "D":"وينستون سميث"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 228,
+    "question": "من كتب رواية 'أن تقتل طائراً بريئاً'؟",
+    "options": {"A":"جون شتاينبك", "B":"إرنست همنغواي", "C":"هاربر لي", "D":"ويليام فوكنر"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 229,
+    "question": "ما اسم السفينة في رواية هيرمان ميلفيل 'موبي ديك'؟",
+    "options": {"A":"البيكوود", "B":"الهيسبانيولا", "C":"النوتيلوس", "D":"الجولي روجر"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 230,
+    "question": "أي حركة فنية تتميز بمشاهد شبيهة بالأحلام وصور رمزية، ومثلها سلفادور دالي؟",
+    "options": {"A":"التكعيبية", "B":"الانطباعية", "C":"السريالية", "D":"التعبيرية"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 231,
+    "question": "من هو مؤلف 'غاتسبي العظيم'؟",
+    "options": {"A":"إف. سكوت فيتزجيرالد", "B":"ويليام فوكنر", "C":"إرنست همنغواي", "D":"جون شتاينبك"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 232,
+    "question": "ما اسم استوديو الرسوم المتحركة الياباني الشهير بأفلام مثل 'المخطوفة' و'جاري توتورو'؟",
+    "options": {"A":"مادهاوس", "B":"بونز", "C":"توي أنيميشن", "D":"ستوديو غيبلي"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 233,
+    "question": "من كتب 'كبرياء وتحامل'؟",
+    "options": {"A":"الأخوات برونتي", "B":"ماري شيلي", "C":"جين أوستن", "D":"جورج إليوت"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 234,
+    "question": "ما الآلة الموسيقية التي كان يعزف عليها شيرلوك هولمز؟",
+    "options": {"A":"البيانو", "B":"الفلوت", "C":"الكمان", "D":"التشيلو"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 235,
+    "question": "ما اسم المدينة الخيالية التي يعمل فيها باتمان؟",
+    "options": {"A":"متروبوليس", "B":"ستار سيتي", "C":"غوثام سيتي", "D":"سنترال سيتي"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 236,
+    "question": "ما هي المسرحية الموسيقية الشهيرة التي تستند إلى رواية فيكتور هوغو 'البؤساء'؟",
+    "options": {"A":"شبح الأوبرا", "B":"البؤساء", "C":"قطط", "D":"ويكد"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "art-literature"
+  },
+  {
+    "id": 237,
+    "question": "أي رواية تبدأ بجملة 'نادني إسماعيل'؟",
+    "options": {"A":"موبي ديك", "B":"قلب الظلام", "C":"جزيرة الكنز", "D":"غاتسبي العظيم"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 238,
+    "question": "من كتب القصيدة الملحمية 'الفردوس المفقود'؟",
+    "options": {"A":"جون ميلتون", "B":"ويليام شكسبير", "C":"دانتي أليغييري", "D":"جيوفري تشوسر"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 239,
+    "question": "ماذا يسمى الأسلوب الأدبي لبدء القصة في منتصف الأحداث؟",
+    "options": {"A":"فلاش باك", "B":"في صلب الموضوع", "C":"ذروة", "D":"خاتمة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 240,
+    "question": "أي مؤلف روسي كتب 'الجريمة والعقاب'؟",
+    "options": {"A":"ليو تولستوي", "B":"أنطون تشيخوف", "C":"فيودور دوستويفسكي", "D":"ألكسندر بوشكين"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 241,
+    "question": "من هما الفنانان اللذان كانا رائدين في الحركة الفنية 'التكعيبية'؟",
+    "options": {"A":"سلفادور دالي وماكس إرنست", "B":"بابلو بيكاسو وجورج براك", "C":"هنري ماتيس وأندريه ديرين", "D":"كلود مونيه وبيير أوغست رينوار"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 242,
+    "question": "من هو مؤلف 'مائة عام من العزلة'؟",
+    "options": {"A":"خورخي لويس بورخيس", "B":"ماريو فارغاس يوسا", "C":"غابرييل غارسيا ماركيز", "D":"بابلو نيرودا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 243,
+    "question": "ما اسم بطل رواية فرانز كافكا 'المسخ'؟",
+    "options": {"A":"جوزيف ك.", "B":"كارل روسمان", "C":"جورج بيندمان", "D":"جريجور سامسا"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 244,
+    "question": "أي عمل موسيقي للملحن إيغور سترافينسكي تسبب في أعمال شغب في عرضه الأول عام 1913 في باريس؟",
+    "options": {"A":"طائر النار", "B":"بيتروشكا", "C":"طقوس الربيع", "D":"حكاية جندي"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 245,
+    "question": "ما اسم الحركة الأدبية والفلسفية المرتبطة بكتاب مثل جان بول سارتر وألبير كامو؟",
+    "options": {"A":"الرومانسية", "B":"الوجودية", "C":"الحداثة", "D":"البنيوية"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 246,
+    "question": "من رسم 'ولادة فينوس'؟",
+    "options": {"A":"ليوناردو دافنشي", "B":"مايكل أنجلو", "C":"رافائيل", "D":"ساندرو بوتيتشيلي"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 247,
+    "question": "ما اسم اللغة التي ابتكرها ج. ر. ر. تولكين للجان في كتبه؟",
+    "options": {"A":"كليجون", "B":"دوثراكي", "C":"السندارين", "D":"إسبرانتو"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "art-literature"
+  },
+  {
+    "id": 248,
+    "question": "ما هو عكس كلمة 'ساخن'؟",
+    "options": {"A":"بارد", "B":"دافئ", "C":"مشرق", "D":"مظلم"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 249,
+    "question": "ماذا تستخدم لفتح الباب؟",
+    "options": {"A":"شوكة", "B":"ملعقة", "C":"مفتاح", "D":"قلم"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 250,
+    "question": "كم عدد الأشهر في السنة؟",
+    "options": {"A":"10", "B":"11", "C":"12", "D":"13"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 251,
+    "question": "ما هو المكون الرئيسي في الخبز؟",
+    "options": {"A":"سكر", "B":"ملح", "C":"دقيق", "D":"ماء"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 252,
+    "question": "ما هو لون إشارة التوقف؟",
+    "options": {"A":"أخضر", "B":"أصفر", "C":"أحمر", "D":"أزرق"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "general"
+  },
+  {
+    "id": 253,
+    "question": "ماذا يعني 'www' في عنوان موقع ويب؟",
+    "options": {"A":"شبكة الويب العالمية", "B":"نافذة ويب واسعة", "C":"موقع ويب عالمي", "D":"لماذا ننتظر"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 254,
+    "question": "ما هي عملة الاتحاد الأوروبي؟",
+    "options": {"A":"الدولار", "B":"اليورو", "C":"الجنيه", "D":"الفرنك"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 255,
+    "question": "كم عدد الولايات في الولايات المتحدة الأمريكية؟",
+    "options": {"A":"48", "B":"49", "C":"50", "D":"51"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 256,
+    "question": "على لوحة المفاتيح القياسية، ما هو الحرف الذي على يمين 'ق'؟",
+    "options": {"A":"ف", "B":"ع", "C":"غ", "D":"ت"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 257,
+    "question": "ماذا يقيس ميزان الحرارة؟",
+    "options": {"A":"الضغط", "B":"درجة الحرارة", "C":"الوزن", "D":"السرعة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 258,
+    "question": "ماذا تسمى مجموعة من الأسود؟",
+    "options": {"A":"قطيع", "B":"زمرة", "C":"سرب", "D":"عصابة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 259,
+    "question": "ما هي درجة غليان الماء بالدرجة المئوية؟",
+    "options": {"A":"90", "B":"100", "C":"110", "D":"120"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 260,
+    "question": "ما هي أكبر عظمة في جسم الإنسان؟",
+    "options": {"A":"عظم الفخذ", "B":"عظم العضد", "C":"الجمجمة", "D":"العمود الفقري"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 261,
+    "question": "أي شركة تستخدم شعار 'Just Do It'؟",
+    "options": {"A":"أديداس", "B":"بوما", "C":"نايكي", "D":"ريبوك"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 262,
+    "question": "ما هي عاصمة اليابان؟",
+    "options": {"A":"أوساكا", "B":"كيوتو", "C":"طوكيو", "D":"هيروشيما"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 263,
+    "question": "ما هي اللغة الرئيسية التي يتحدث بها في البرازيل؟",
+    "options": {"A":"الإسبانية", "B":"البرتغالية", "C":"الفرنسية", "D":"الإنجليزية"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "general"
+  },
+  {
+    "id": 264,
+    "question": "في أي بلد وقعت كارثة تشيرنوبيل النووية؟",
+    "options": {"A":"روسيا", "B":"أوكرانيا", "C":"بيلاروسيا", "D":"كازاخستان"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 265,
+    "question": "ما هو المكون الأساسي في المشروب الياباني التقليدي 'الساكي'؟",
+    "options": {"A":"الشعير", "B":"الأرز", "C":"العنب", "D":"البطاطس"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 266,
+    "question": "علم الرايات (الفيكسيلولوجيا) هو دراسة ماذا؟",
+    "options": {"A":"العملات", "B":"الطوابع", "C":"الأعلام", "D":"الخرائط"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 267,
+    "question": "ما هو اسم أكبر سحلية في العالم؟",
+    "options": {"A":"الإغوانا", "B":"التمساح", "C":"تنين كومودو", "D":"الورل"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 268,
+    "question": "ما هو العنصر الذي يرمز له بالرمز الكيميائي 'K'؟",
+    "options": {"A":"الكريبتون", "B":"الكالسيوم", "C":"البوتاسيوم", "D":"الكوبالت"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 269,
+    "question": "في أي عام تم إطلاق أول هاتف آيفون؟",
+    "options": {"A":"2005", "B":"2006", "C":"2007", "D":"2008"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 270,
+    "question": "ما هو الحيوان الوطني لاسكتلندا؟",
+    "options": {"A":"النسر الأصلع", "B":"الأسد", "C":"وحيد القرن", "D":"الدب"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 271,
+    "question": "أي فيزيائي شهير يُعرف بالمعادلة E=mc²؟",
+    "options": {"A":"إسحاق نيوتن", "B":"ألبرت أينشتاين", "C":"نيلز بور", "D":"غاليليو غاليلي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 272,
+    "question": "ما اسم العملة المستخدمة في سويسرا؟",
+    "options": {"A":"اليورو", "B":"الكرونا", "C":"الفرنك السويسري", "D":"الدولار"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 273,
+    "question": "كم عدد النقاط على زوج من النرد؟",
+    "options": {"A":"21", "B":"36", "C":"42", "D":"48"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 274,
+    "question": "أي كوكب يُعرف ببقعته الحمراء العظيمة؟",
+    "options": {"A":"المريخ", "B":"زحل", "C":"المشتري", "D":"نبتون"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 275,
+    "question": "ما هو الاسم الكامل لمبتكر 'حرب النجوم'؟",
+    "options": {"A":"جورج لوكاس", "B":"ستيفن سبيلبرغ", "C":"جيمس كاميرون", "D":"جي. جي. أبرامز"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 276,
+    "question": "ما هو المصطلح الذي يطلق على الخوف من الرقم 13؟",
+    "options": {"A":"أكروفوبيا", "B":"كلوستروفوبيا", "C":"تريسكايديكافوبيا", "D":"أراكنوفوبيا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 277,
+    "question": "ما هو العدد الأولي الزوجي الوحيد؟",
+    "options": {"A":"0", "B":"2", "C":"4", "D":"10"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "general"
+  },
+  {
+    "id": 278,
+    "question": "من كان أول رئيس للولايات المتحدة؟",
+    "options": {"A":"جورج واشنطن", "B":"توماس جيفرسون", "C":"أبراهام لينكولن", "D":"جون آدامز"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 279,
+    "question": "ما اسم السفينة التي جلبت الحجاج إلى أمريكا عام 1620؟",
+    "options": {"A":"سانتا ماريا", "B":"ماي فلاور", "C":"ديسكفري", "D":"إنديفور"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 280,
+    "question": "أي حضارة قديمة بنت الكولوسيوم؟",
+    "options": {"A":"الإغريق", "B":"المصريون", "C":"الرومان", "D":"الفرس"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 281,
+    "question": "من كانت ملكة مصر القديمة الشهيرة؟",
+    "options": {"A":"نفرتيتي", "B":"حتشبسوت", "C":"كليوباترا", "D":"نفرتاري"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 282,
+    "question": "ما الحدث الذي بدأ الحرب العالمية الأولى؟",
+    "options": {"A":"غزو بولندا", "B":"اغتيال الأرشيدوق فرانز فرديناند", "C":"غرق لوسيتانيا", "D":"معركة السوم"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 283,
+    "question": "من اكتشف أمريكا عام 1492؟",
+    "options": {"A":"كريستوفر كولومبوس", "B":"فاسكو دا غاما", "C":"فرديناند ماجلان", "D":"جيمس كوك"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 284,
+    "question": "من كان مارتن لوثر كينغ جونيور؟",
+    "options": {"A":"رئيس", "B":"زعيم حقوق مدنية", "C":"مخترع", "D":"فنان"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 285,
+    "question": "ماذا اخترع الأخوان رايت؟",
+    "options": {"A":"السيارة", "B":"الهاتف", "C":"الطائرة", "D":"المصباح الكهربائي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 286,
+    "question": "ما اسم الجدار الذي كان يقسم مدينة ألمانية؟",
+    "options": {"A":"سور الصين العظيم", "B":"جدار هادريان", "C":"جدار برلين", "D":"حائط المبكى"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 287,
+    "question": "في أي بلد بدأت عصر النهضة؟",
+    "options": {"A":"فرنسا", "B":"إسبانيا", "C":"إيطاليا", "D":"إنجلترا"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 288,
+    "question": "ماذا كان الفرسان؟",
+    "options": {"A":"مزارعون", "B":"محاربون في العصور الوسطى", "C":"تجار", "D":"كهنة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "history"
+  },
+  {
+    "id": 289,
+    "question": "ماذا كان 'طريق الحرير'؟",
+    "options": {"A":"نهر قديم", "B":"شبكة طرق تجارية", "C":"سلسلة جبال", "D":"كتاب مقدس"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 290,
+    "question": "من قاد الاتحاد السوفيتي خلال الحرب العالمية الثانية؟",
+    "options": {"A":"فلاديمير لينين", "B":"جوزيف ستالين", "C":"نيكيتا خروتشوف", "D":"ليون تروتسكي"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 291,
+    "question": "ماذا يطلق على فترة النمو الفني والثقافي الكبير في أوروبا من القرن الرابع عشر إلى السابع عشر؟",
+    "options": {"A":"عصر التنوير", "B":"عصر النهضة", "C":"العصور الوسطى", "D":"الثورة الصناعية"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 292,
+    "question": "أي إمبراطورية حكمها جنكيز خان؟",
+    "options": {"A":"الإمبراطورية العثمانية", "B":"الإمبراطورية الرومانية", "C":"الإمبراطورية المغولية", "D":"الإمبراطورية الفارسية"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 293,
+    "question": "في أي حرب وقعت معركة جيتيسبيرغ؟",
+    "options": {"A":"الحرب الأهلية الأمريكية", "B":"حرب الاستقلال الأمريكية", "C":"الحرب العالمية الأولى", "D":"حرب فيتنام"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "history"
+  },
+  {
+    "id": 294,
+    "question": "في أي رياضة تستخدم مضرباً وكرة وقفازات؟",
+    "options": {"A":"البيسبول", "B":"كرة السلة", "C":"كرة القدم", "D":"الجولف"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 295,
+    "question": "كم عدد اللاعبين في فريق كرة السلة على الملعب في وقت واحد؟",
+    "options": {"A":"5", "B":"6", "C":"7", "D":"11"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 296,
+    "question": "في أي رياضة تقوم بتسديدة 'سلام دانك'؟",
+    "options": {"A":"الكرة الطائرة", "B":"كرة السلة", "C":"التنس", "D":"كرة اليد"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 297,
+    "question": "ما اسم الحدث الذي يتنافس فيه الرياضيون من جميع أنحاء العالم كل أربع سنوات؟",
+    "options": {"A":"كأس العالم", "B":"الألعاب الأولمبية", "C":"بطولة ويمبلدون", "D":"السوبر بول"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 298,
+    "question": "ماذا يطلق على تسجيل النقاط في كرة القدم الأمريكية؟",
+    "options": {"A":"هدف", "B":"هوم رن", "C":"تاتش داون", "D":"نقطة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 299,
+    "question": "أي بلد فاز بأول كأس عالم لكرة القدم عام 1930؟",
+    "options": {"A":"البرازيل", "B":"الأرجنتين", "C":"أوروغواي", "D":"إيطاليا"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 300,
+    "question": "ما لون الكرة المستخدمة في مباراة تنس قياسية؟",
+    "options": {"A":"أبيض", "B":"أخضر", "C":"أصفر", "D":"برتقالي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 301,
+    "question": "كم عدد الحفر في جولة جولف قياسية؟",
+    "options": {"A":"9", "B":"18", "C":"27", "D":"36"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 302,
+    "question": "في أي رياضة تجد حارس مرمى ومدافعين ومهاجمين؟",
+    "options": {"A":"البيسبول", "B":"التنس", "C":"الهوكي", "D":"الجولف"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 303,
+    "question": "ما هي أعلى درجة ممكنة بسهم واحد في لعبة رمي السهام؟",
+    "options": {"A":"20", "B":"50", "C":"60", "D":"100"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 304,
+    "question": "أي رياضة تُعرف بـ 'اللعبة الجميلة'؟",
+    "options": {"A":"كرة السلة", "B":"كرة القدم", "C":"البيسبول", "D":"التنس"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 305,
+    "question": "كم تبلغ مسافة الماراثون؟",
+    "options": {"A":"20.2 ميل", "B":"26.2 ميل", "C":"30.5 ميل", "D":"42.5 ميل"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 306,
+    "question": "في الملاكمة، ماذا يعني 'KO'؟",
+    "options": {"A":"استمر", "B":"انتهى الأمر", "C":"ضربة قاضية", "D":"خارج اللعبة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 307,
+    "question": "ما هو الهدف الرئيسي المستخدم في كرة القدم؟",
+    "options": {"A":"مضرب", "B":"كرة", "C":"عصا", "D":"قرص"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "sports"
+  },
+  {
+    "id": 308,
+    "question": "ما اسم الكأس الذي يمنح للفائز في تصفيات دوري الهوكي الوطني؟",
+    "options": {"A":"كأس ستانلي", "B":"كأس لومباردي", "C":"كأس المفوض", "D":"كأس ويمبلدون"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 309,
+    "question": "في أي مدينة أقيمت أول دورة ألعاب أولمبية حديثة عام 1896؟",
+    "options": {"A":"باريس", "B":"لندن", "C":"أثينا", "D":"روما"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 310,
+    "question": "من الذي يطلق عليه غالباً 'الأعظم' في رياضة الملاكمة؟",
+    "options": {"A":"محمد علي", "B":"مايك تايسون", "C":"روكي مارسيانو", "D":"جو لويس"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 311,
+    "question": "ما هو 'الهاتريك' في الرياضة؟",
+    "options": {"A":"ثلاثة أهداف للاعب واحد في مباراة واحدة", "B":"الفوز بثلاث مباريات متتالية", "C":"إخراج ثلاثة لاعبين", "D":"تسجيل ثلاث نقاط"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 312,
+    "question": "أي بلد ينسب إليه الفضل في اختراع رياضة الكريكيت؟",
+    "options": {"A":"أستراليا", "B":"الهند", "C":"إنجلترا", "D":"جنوب أفريقيا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 313,
+    "question": "في التنس، ما النتيجة التي تأتي بعد 'التعادل'؟",
+    "options": {"A":"لعبة", "B":"نقطة المباراة", "C":"أفضلية", "D":"صفر"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 314,
+    "question": "ما اسم سباق الدراجات الشهير الذي يقام في فرنسا كل عام؟",
+    "options": {"A":"طواف إيطاليا", "B":"طواف إسبانيا", "C":"طواف فرنسا", "D":"طواف سويسرا"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 315,
+    "question": "من يحمل الرقم القياسي لأكبر عدد من الأهداف (هوم رن) في موسم واحد في دوري البيسبول الرئيسي؟",
+    "options": {"A":"بيب روث", "B":"باري بوندز", "C":"مارك ماكغواير", "D":"سامي سوسا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 316,
+    "question": "ماذا يعني 'FIFA'؟",
+    "options": {"A":"الاتحاد الدولي لكرة القدم", "B":"اتحاد كرة القدم الدولي المستقل", "C":"اتحاد كرة القدم الدولي", "D":"اتحاد كرة القدم الدولي المحترف"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 317,
+    "question": "في أي رياضة يستخدم مصطلح 'الحب' (love) لنتيجة صفر؟",
+    "options": {"A":"الريشة الطائرة", "B":"التنس", "C":"كرة الطاولة", "D":"الاسكواش"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 318,
+    "question": "أي رياضي فاز بأكبر عدد من الميداليات الأولمبية في التاريخ؟",
+    "options": {"A":"يوسين بولت", "B":"مايكل فيلبس", "C":"لاريسا لاتينينا", "D":"بآفو نورمي"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "sports"
+  },
+  {
+    "id": 319,
+    "question": "أي بلد فاز بكأس العالم للرجبي الافتتاحي عام 1987؟",
+    "options": {"A":"أستراليا", "B":"إنجلترا", "C":"نيوزيلندا", "D":"جنوب أفريقيا"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 320,
+    "question": "في أي عام أقيم أول سوبر بول؟",
+    "options": {"A":"1965", "B":"1967", "C":"1969", "D":"1971"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 321,
+    "question": "من كان أول لاعب بيسبول يكسر حاجز اللون في دوري البيسبول الرئيسي؟",
+    "options": {"A":"جاكي روبنسون", "B":"ويلي مays", "C":"ساتشل بيج", "D":"هانك آرون"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 322,
+    "question": "تقنية 'فوسبري فلوب' تستخدم في أي حدث من أحداث ألعاب القوى؟",
+    "options": {"A":"القفز الطويل", "B":"القفز العالي", "C":"القفز بالزانة", "D":"القفز الثلاثي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 323,
+    "question": "ما اسم الحصان الوحيد الذي فاز بالتاج الثلاثي الأمريكي بسجل غير مهزوم؟",
+    "options": {"A":"سياتل سلو", "B":"جستيفاي", "C":"سيكريتاريات", "D":"أمريكان فاروه"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 324,
+    "question": "في الكريكيت، ما المصطلح الذي يطلق على إخراج ضارب الكرة دون تسجيل أي جولة؟",
+    "options": {"A":"صفر", "B":"بطة", "C":"بيضة", "D":"لا شيء"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 325,
+    "question": "ما هو الحد الأقصى لعدد المضارب المسموح للاعب الجولف بحملها في حقيبته أثناء الجولة؟",
+    "options": {"A":"12", "B":"14", "C":"16", "D":"18"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 326,
+    "question": "تُمنح 'كأس هايزمان' سنوياً لأفضل لاعب في أي رياضة أمريكية؟",
+    "options": {"A":"كرة القدم الجامعية", "B":"البيسبول المحترف", "C":"كرة السلة الجامعية", "D":"الهوكي المحترف"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 327,
+    "question": "ما هي الدولة الوحيدة التي شاركت في كل بطولات كأس العالم لكرة القدم؟",
+    "options": {"A":"ألمانيا", "B":"إيطاليا", "C":"الأرجنتين", "D":"البرازيل"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 328,
+    "question": "أي لاعبة تنس فازت بأكبر عدد من ألقاب الفردي في البطولات الكبرى في العصر المفتوح؟",
+    "options": {"A":"سيرينا ويليامز", "B":"شتيفي غراف", "C":"مارتينا نافراتيلوفا", "D":"مارغريت كورت"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 329,
+    "question": "ما اسم الفن القتالي الياباني الذي يعني 'الطريق اللطيف'؟",
+    "options": {"A":"كاراتيه", "B":"جودو", "C":"أيكيدو", "D":"سومو"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 330,
+    "question": "في سباقات الفورمولا 1، ما لون العلم الذي يلوح به للإشارة إلى نهاية السباق؟",
+    "options": {"A":"أبيض", "B":"أسود", "C":"مربعات", "D":"أحمر"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 331,
+    "question": "من هو الملاكم الوحيد الذي اعتزل كبطل وزن ثقيل غير مهزوم؟",
+    "options": {"A":"محمد علي", "B":"جو لويس", "C":"روكي مارسيانو", "D":"مايك تايسون"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 332,
+    "question": "في أي رياضة تجد 'البلاتون'؟",
+    "options": {"A":"الجري", "B":"السباحة", "C":"ركوب الدراجات", "D":"التجديف"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 333,
+    "question": "ما اسم أقدم بطولة جولف في العالم، وهي واحدة من البطولات الأربع الكبرى؟",
+    "options": {"A":"بطولة الماسترز", "B":"بطولة الولايات المتحدة المفتوحة", "C":"بطولة بريطانيا المفتوحة", "D":"بطولة PGA"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "id": 334,
+    "question": "كم عدد أركان الإسلام؟",
+    "options": {"A":"أربعة", "B":"خمسة", "C":"ستة", "D":"سبعة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 335,
+    "question": "ما هو أول أركان الإسلام؟",
+    "options": {"A":"الصلاة", "B":"الزكاة", "C":"الشهادتان", "D":"الصوم"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 336,
+    "question": "ما هو الشهر الذي يصوم فيه المسلمون؟",
+    "options": {"A":"شعبان", "B":"رمضان", "C":"شوال", "D":"رجب"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 337,
+    "question": "كم عدد الصلوات المفروضة في اليوم؟",
+    "options": {"A":"ثلاث", "B":"أربع", "C":"خمس", "D":"ست"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 338,
+    "question": "ما هو اسم الكتاب المقدس للمسلمين؟",
+    "options": {"A":"الإنجيل", "B":"التوراة", "C":"الزبور", "D":"القرآن الكريم"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 339,
+    "question": "من هو خاتم الأنبياء والرسل؟",
+    "options": {"A":"عيسى عليه السلام", "B":"موسى عليه السلام", "C":"إبراهيم عليه السلام", "D":"محمد صلى الله عليه وسلم"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 340,
+    "question": "إلى أي مدينة هاجر الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"مكة", "B":"الطائف", "C":"المدينة المنورة", "D":"القدس"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 341,
+    "question": "ما اسم الغار الذي كان يتعبد فيه الرسول صلى الله عليه وسلم قبل البعثة؟",
+    "options": {"A":"غار ثور", "B":"غار حراء", "C":"غار أحد", "D":"غار بدر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 342,
+    "question": "ما هي القبلة التي يتجه إليها المسلمون في صلاتهم؟",
+    "options": {"A":"المسجد الأقصى", "B":"الكعبة المشرفة", "C":"مسجد قباء", "D":"المسجد النبوي"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 343,
+    "question": "ما هي الصلاة التي تؤدى في عيد الفطر؟",
+    "options": {"A":"صلاة التراويح", "B":"صلاة العيد", "C":"صلاة الاستسقاء", "D":"صلاة الكسوف"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 344,
+    "question": "ما اسم أول مؤذن في الإسلام؟",
+    "options": {"A":"عمر بن الخطاب", "B":"علي بن أبي طالب", "C":"بلال بن رباح", "D":"أبو بكر الصديق"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 345,
+    "question": "من هي أم الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"حليمة السعدية", "B":"فاطمة بنت أسد", "C":"خديجة بنت خويلد", "D":"آمنة بنت وهب"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 346,
+    "question": "ما هو اسم عم الرسول صلى الله عليه وسلم الذي كفله بعد وفاة جده؟",
+    "options": {"A":"أبو لهب", "B":"العباس", "C":"أبو طالب", "D":"حمزة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 347,
+    "question": "كم عدد أسماء الله الحسنى؟",
+    "options": {"A":"90", "B":"99", "C":"100", "D":"114"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 348,
+    "question": "ما هو الركن الثالث من أركان الإسلام؟",
+    "options": {"A":"الصلاة", "B":"الحج", "C":"إيتاء الزكاة", "D":"صوم رمضان"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 349,
+    "question": "ما هو اليوم الذي خُلق فيه آدم عليه السلام؟",
+    "options": {"A":"الخميس", "B":"الجمعة", "C":"السبت", "D":"الأحد"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 350,
+    "question": "ماذا يطلق على الحج الأصغر؟",
+    "options": {"A":"العمرة", "B":"الطواف", "C":"السعي", "D":"الوقوف"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 351,
+    "question": "ما اسم أول زوجات الرسول صلى الله عليه وسلم؟",
+    "options": {"A":"عائشة", "B":"خديجة", "C":"حفصة", "D":"مارية"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 352,
+    "question": "ما هي السورة التي تسبق سورة الناس في القرآن؟",
+    "options": {"A":"الفاتحة", "B":"الإخلاص", "C":"الفلق", "D":"الكافرون"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 353,
+    "question": "من هو والد الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"عبد المطلب", "B":"عبد الله", "C":"أبو طالب", "D":"هاشم"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 354,
+    "question": "ماذا نقول قبل البدء بتناول الطعام؟",
+    "options": {"A":"الحمد لله", "B":"سبحان الله", "C":"بسم الله", "D":"الله أكبر"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 355,
+    "question": "ما هو اسم الشهر التاسع في التقويم الهجري؟",
+    "options": {"A":"شوال", "B":"رمضان", "C":"رجب", "D":"ذو الحجة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 356,
+    "question": "من هو جد الرسول صلى الله عليه وسلم؟",
+    "options": {"A":"عبد الله", "B":"هاشم", "C":"عبد المطلب", "D":"أبو طالب"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 357,
+    "question": "كم عدد ركعات صلاة الفجر؟",
+    "options": {"A":"ركعتان", "B":"ثلاث ركعات", "C":"أربع ركعات", "D":"ركعة واحدة"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 358,
+    "question": "ما اسم الملك الموكل بإنزال المطر؟",
+    "options": {"A":"جبريل", "B":"ميكائيل", "C":"إسرافيل", "D":"رضوان"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 359,
+    "question": "ما هو عيد المسلمين الذي يأتي بعد رمضان؟",
+    "options": {"A":"عيد الأضحى", "B":"عيد الفطر", "C":"المولد النبوي", "D":"رأس السنة الهجرية"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 360,
+    "question": "ما اسم أول مسجد بني في الإسلام؟",
+    "options": {"A":"المسجد الحرام", "B":"المسجد الأقصى", "C":"المسجد النبوي", "D":"مسجد قباء"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 361,
+    "question": "ما هي ليلة القدر؟",
+    "options": {"A":"ليلة في رمضان خير من ألف شهر", "B":"ليلة الإسراء والمعراج", "C":"ليلة مولد النبي", "D":"أول ليلة من رمضان"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 362,
+    "question": "ماذا تسمى الصدقة التي تخرج في نهاية رمضان؟",
+    "options": {"A":"الزكاة", "B":"الهدية", "C":"زكاة الفطر", "D":"الصدقة الجارية"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 363,
+    "question": "ما هو أول ركن من أركان الإيمان؟",
+    "options": {"A":"الإيمان بالرسل", "B":"الإيمان بالكتب", "C":"الإيمان بالله", "D":"الإيمان بالملائكة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 364,
+    "question": "من هم 'أولو العزم' من الرسل؟",
+    "options": {"A":"الأنبياء الذين ذكروا في سورة الأنعام", "B":"خمسة من الرسل تميزوا بالصبر", "C":"كل الأنبياء والرسل", "D":"الأنبياء من بني إسرائيل"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 365,
+    "question": "من هو أول الخلفاء الراشدين؟",
+    "options": {"A":"عمر بن الخطاب", "B":"عثمان بن عفان", "C":"علي بن أبي طالب", "D":"أبو بكر الصديق"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 366,
+    "question": "كم عدد سور القرآن الكريم؟",
+    "options": {"A":"110", "B":"114", "C":"120", "D":"100"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 367,
+    "question": "ما هي أطول سورة في القرآن الكريم؟",
+    "options": {"A":"آل عمران", "B":"النساء", "C":"البقرة", "D":"المائدة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 368,
+    "question": "ما هي السورة التي تسمى 'قلب القرآن'؟",
+    "options": {"A":"الرحمن", "B":"يس", "C":"الملك", "D":"الواقعة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 369,
+    "question": "من هو الصحابي الذي لقب بـ 'سيف الله المسلول'؟",
+    "options": {"A":"علي بن أبي طالب", "B":"خالد بن الوليد", "C":"عمرو بن العاص", "D":"سعد بن أبي وقاص"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 370,
+    "question": "ما اسم المعركة التي انتصر فيها المسلمون في رمضان؟",
+    "options": {"A":"معركة أحد", "B":"معركة الخندق", "C":"معركة بدر", "D":"معركة حنين"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 371,
+    "question": "من هو الصحابي الذي كان أمين هذه الأمة؟",
+    "options": {"A":"أبو عبيدة بن الجراح", "B":"عبد الرحمن بن عوف", "C":"الزبير بن العوام", "D":"طلحة بن عبيد الله"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 372,
+    "question": "ما اسم الرحلة التي قام بها الرسول صلى الله عليه وسلم من المسجد الحرام إلى المسجد الأقصى؟",
+    "options": {"A":"الهجرة", "B":"المعراج", "C":"الإسراء", "D":"الفتح"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 373,
+    "question": "من هو النبي الذي ابتلعه الحوت؟",
+    "options": {"A":"يوسف عليه السلام", "B":"يونس عليه السلام", "C":"أيوب عليه السلام", "D":"إلياس عليه السلام"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 374,
+    "question": "كم عدد أجزاء القرآن الكريم؟",
+    "options": {"A":"20 جزءًا", "B":"30 جزءًا", "C":"40 جزءًا", "D":"60 جزءًا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 375,
+    "question": "ما هي 'العشرة المبشرون بالجنة'؟",
+    "options": {"A":"عشرة من الصحابة بشرهم النبي بالجنة", "B":"عشرة من الأنبياء", "C":"أول عشرة أسلموا", "D":"آخر عشرة توفوا من الصحابة"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 376,
+    "question": "من هو الخليفة الذي جمع القرآن الكريم في مصحف واحد؟",
+    "options": {"A":"أبو بكر الصديق", "B":"عمر بن الخطاب", "C":"عثمان بن عفان", "D":"علي بن أبي طالب"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 377,
+    "question": "ما هي أقصر سورة في القرآن الكريم؟",
+    "options": {"A":"الإخلاص", "B":"الفلق", "C":"النصر", "D":"الكوثر"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 378,
+    "question": "من هو النبي الذي كلمه الله في جبل الطور؟",
+    "options": {"A":"إبراهيم عليه السلام", "B":"موسى عليه السلام", "C":"عيسى عليه السلام", "D":"محمد صلى الله عليه وسلم"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 379,
+    "question": "ما هو العام الذي ولد فيه الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"عام الفيل", "B":"عام الحزن", "C":"عام الرمادة", "D":"عام الهجرة"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 380,
+    "question": "ما اسم المعركة التي استشهد فيها حمزة بن عبد المطلب عم النبي؟",
+    "options": {"A":"بدر", "B":"أحد", "C":"الخندق", "D":"مؤتة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 381,
+    "question": "ماذا يسمى يوم التاسع من ذي الحجة؟",
+    "options": {"A":"يوم التروية", "B":"يوم عرفة", "C":"يوم النحر", "D":"يوم القر"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 382,
+    "question": "من هو النبي الذي بنى الكعبة مع ابنه إسماعيل؟",
+    "options": {"A":"آدم", "B":"نوح", "C":"إبراهيم", "D":"يعقوب"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 383,
+    "question": "ما اسم زوجة فرعون التي آمنت بالله؟",
+    "options": {"A":"هاجر", "B":"زبيدة", "C":"آسية", "D":"بلقيس"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 384,
+    "question": "ما هي السورة التي تسمى 'عروس القرآن'؟",
+    "options": {"A":"البقرة", "B":"يس", "C":"الرحمن", "D":"الملك"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 385,
+    "question": "من هو الصحابي الذي اهتز لموته عرش الرحمن؟",
+    "options": {"A":"حمزة بن عبد المطلب", "B":"جعفر بن أبي طالب", "C":"سعد بن معاذ", "D":"مصعب بن عمير"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 386,
+    "question": "كم كان عمر الرسول صلى الله عليه وسلم عندما نزل عليه الوحي؟",
+    "options": {"A":"30 سنة", "B":"40 سنة", "C":"50 سنة", "D":"60 سنة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 387,
+    "question": "ما هي الصلاة التي ليس فيها ركوع ولا سجود؟",
+    "options": {"A":"صلاة العيد", "B":"صلاة الاستسقاء", "C":"صلاة الجنازة", "D":"صلاة الكسوف"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 388,
+    "question": "ما هو أول ما خلق الله؟",
+    "options": {"A":"السماوات والأرض", "B":"العرش", "C":"القلم", "D":"الماء"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 389,
+    "question": "من هو النبي الذي ألقي في النار فكانت برداً وسلاماً عليه؟",
+    "options": {"A":"موسى", "B":"يوسف", "C":"إبراهيم", "D":"عيسى"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 390,
+    "question": "ما هي 'دار الأرقم'؟",
+    "options": {"A":"بيت الرسول في مكة", "B":"أول مكان للاجتماع السري للمسلمين", "C":"سوق في المدينة", "D":"مسجد صغير قرب الكعبة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 391,
+    "question": "من هو الصحابي الذي كان يُعرف بـ 'ذي النورين'؟",
+    "options": {"A":"أبو بكر الصديق", "B":"عمر بن الخطاب", "C":"عثمان بن عفان", "D":"علي بن أبي طالب"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 392,
+    "question": "ما هي أعظم آية في القرآن الكريم؟",
+    "options": {"A":"آخر آية من سورة البقرة", "B":"آية الكرسي", "C":"أول آية من سورة الفاتحة", "D":"آية النور"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 393,
+    "question": "ما هي السورة الوحيدة في القرآن التي لم تبدأ بالبسملة؟",
+    "options": {"A":"الأنفال", "B":"التوبة", "C":"يونس", "D":"هود"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 394,
+    "question": "من هو الصحابي الوحيد الذي ذكر اسمه صراحة في القرآن؟",
+    "options": {"A":"أبو بكر الصديق", "B":"زيد بن حارثة", "C":"عمر بن الخطاب", "D":"سلمان الفارسي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 395,
+    "question": "كم سنة استمر نزول القرآن الكريم؟",
+    "options": {"A":"13 سنة", "B":"20 سنة", "C":"23 سنة", "D":"10 سنوات"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 396,
+    "question": "من هي المرأة الوحيدة التي ذكر اسمها في القرآن الكريم؟",
+    "options": {"A":"خديجة", "B":"عائشة", "C":"فاطمة", "D":"مريم"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 397,
+    "question": "في أي عام هجري وقعت حجة الوداع؟",
+    "options": {"A":"العام الثامن", "B":"العام التاسع", "C":"العام العاشر", "D":"العام الحادي عشر"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 398,
+    "question": "ماذا يعني مصطلح 'أهل البيت'؟",
+    "options": {"A":"سكان مكة", "B":"سكان المدينة", "C":"آل النبي محمد صلى الله عليه وسلم", "D":"الصحابة"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 399,
+    "question": "من هو 'روح القدس' المذكور في القرآن؟",
+    "options": {"A":"ميكائيل عليه السلام", "B":"إسرافيل عليه السلام", "C":"جبريل عليه السلام", "D":"ملك الموت"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 400,
+    "question": "ما هو أول عمل قام به الرسول صلى الله عليه وسلم عند وصوله للمدينة؟",
+    "options": {"A":"بناء المسجد النبوي", "B":"المؤاخاة بين المهاجرين والأنصار", "C":"كتابة وثيقة المدينة", "D":"تجهيز جيش"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 401,
+    "question": "ما هي الغزوة التي تخلف عنها كعب بن مالك وصاحباه؟",
+    "options": {"A":"غزوة أحد", "B":"غزوة الخندق", "C":"غزوة تبوك", "D":"غزوة حنين"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 402,
+    "question": "كم عدد أبواب الجنة؟",
+    "options": {"A":"سبعة", "B":"ثمانية", "C":"تسعة", "D":"عشرة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 403,
+    "question": "من هو النبي الذي يعتبر 'أبو الأنبياء'؟",
+    "options": {"A":"آدم", "B":"نوح", "C":"إبراهيم", "D":"موسى"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 404,
+    "question": "ما هو 'يوم الفرقان'؟",
+    "options": {"A":"يوم غزوة بدر", "B":"يوم فتح مكة", "C":"يوم عرفة", "D":"يوم القيامة"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 405,
+    "question": "ما اسم السورة التي وردت فيها قصة أصحاب الكهف؟",
+    "options": {"A":"يوسف", "B":"الكهف", "C":"مريم", "D":"الأنبياء"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 406,
+    "question": "ما هو 'صلح الحديبية'؟",
+    "options": {"A":"معاهدة سلام بين المسلمين وقريش", "B":"صلح بين الأوس والخزرج", "C":"تقسيم الغنائم بعد غزوة", "D":"اتفاق تجاري"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 407,
+    "question": "من هو 'ذو القرنين' المذكور في سورة الكهف؟",
+    "options": {"A":"نبي من الأنبياء", "B":"ملك صالح", "C":"الإسكندر الأكبر", "D":"أحد الملائكة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 408,
+    "question": "ما هي 'سدرة المنتهى'؟",
+    "options": {"A":"شجرة في الجنة", "B":"مكان في السماء السابعة وصل إليه النبي", "C":"أعلى درجات الجنة", "D":"بوابة السماء"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 409,
+    "question": "كم مرة ذكر اسم 'محمد' في القرآن الكريم؟",
+    "options": {"A":"مرة واحدة", "B":"مرتان", "C":"ثلاث مرات", "D":"أربع مرات"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 410,
+    "question": "ما هو المصطلح الشرعي الذي يعني الاجتهاد لاستنباط حكم شرعي؟",
+    "options": {"A":"القياس", "B":"الإجماع", "C":"الفتوى", "D":"الاستحسان"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 411,
+    "question": "من هو الصحابي الذي أشار على النبي بحفر الخندق في غزوة الأحزاب؟",
+    "options": {"A":"أبو بكر الصديق", "B":"عمر بن الخطاب", "C":"علي بن أبي طالب", "D":"سلمان الفارسي"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 412,
+    "question": "ما هي الحشرة التي تكلمت في القرآن الكريم؟",
+    "options": {"A":"النحلة", "B":"النملة", "C":"العنكبوت", "D":"الجرادة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 413,
+    "question": "ما هي 'الحطمة' التي ذكرت في سورة الهمزة؟",
+    "options": {"A":"اسم من أسماء جهنم", "B":"نوع من العذاب", "C":"وصف للنمام", "D":"جبل في النار"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 414,
+    "question": "ما هي الكتب السماوية الأربعة المذكورة في القرآن؟",
+    "options": {"A":"القرآن، الإنجيل، التوراة، صحف إبراهيم", "B":"القرآن، الإنجيل، التوراة، الزبور", "C":"القرآن، الإنجيل، صحف موسى، الزبور", "D":"القرآن، التوراة، الزبور، صحف شيت"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 415,
+    "question": "كم كان عدد المسلمين في غزوة بدر؟",
+    "options": {"A":"حوالي 1000", "B":"حوالي 313", "C":"حوالي 700", "D":"حوالي 3000"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 416,
+    "question": "ما اسم ناقة الرسول صلى الله عليه وسلم؟",
+    "options": {"A":"الجدعاء", "B":"العضباء", "C":"القصواء", "D":"الشهباء"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 417,
+    "question": "ما هو 'الميقات' في الحج والعمرة؟",
+    "options": {"A":"وقت أداء المناسك", "B":"المكان الذي يحرم منه الحاج أو المعتمر", "C":"مدة الإقامة في مكة", "D":"اسم مكان رمي الجمرات"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 418,
+    "question": "من هي 'أم الكتاب'؟",
+    "options": {"A":"سورة البقرة", "B":"سورة يس", "C":"القرآن الكريم", "D":"سورة الفاتحة"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 419,
+    "question": "ما هي الآية التي نزلت في جوف الكعبة؟",
+    "options": {"A":"لا توجد آية محددة", "B":"آية الكرسي", "C":"قوله تعالى 'إن الله يأمركم أن تؤدوا الأمانات إلى أهلها'", "D":"أول آية من سورة العلق"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 420,
+    "question": "ماذا يطلق على العلم الذي يهتم بتفسير القرآن الكريم؟",
+    "options": {"A":"علم الحديث", "B":"علم الفقه", "C":"علم التفسير", "D":"علم الكلام"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 421,
+    "question": "ما هو الحدث الذي يتم فيه رمي الجمرات؟",
+    "options": {"A":"العمرة", "B":"الحج", "C":"الطواف", "D":"السعي"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 422,
+    "question": "ما اسم والدة السيدة مريم العذراء؟",
+    "options": {"A":"حنة", "B":"سارة", "C":"هاجر", "D":"أليصابات"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 423,
+    "question": "ما هي 'بيعة العقبة'؟",
+    "options": {"A":"بيعة أهل مكة للنبي", "B":"بيعة أهل المدينة (الأوس والخزرج) للنبي", "C":"بيعة الصحابة تحت الشجرة", "D":"بيعة النساء"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 424,
+    "question": "من هو 'صاحب الحوت'؟",
+    "options": {"A":"يوسف عليه السلام", "B":"يونس عليه السلام", "C":"موسى عليه السلام", "D":"الخضر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 425,
+    "question": "ما هي كنية الإمام علي بن أبي طالب؟",
+    "options": {"A":"أبو الحسن", "B":"أبو عبد الله", "C":"أبو القاسم", "D":"أبو إسحاق"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 426,
+    "question": "ماذا يسمى يوم العاشر من شهر محرم؟",
+    "options": {"A":"يوم عرفة", "B":"يوم عاشوراء", "C":"يوم التروية", "D":"يوم النحر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 427,
+    "question": "من هو النبي الذي كان أبوه وجده نبيين؟",
+    "options": {"A":"إسماعيل بن إبراهيم", "B":"يعقوب بن إسحاق", "C":"يوسف بن يعقوب", "D":"سليمان بن داود"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 428,
+    "question": "ما اسم خازن الجنة؟",
+    "options": {"A":"مالك", "B":"رضوان", "C":"عزرائيل", "D":"إسرافيل"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 429,
+    "question": "ما اسم خازن النار؟",
+    "options": {"A":"رضوان", "B":"ميكائيل", "C":"مالك", "D":"جبريل"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 430,
+    "question": "ما هو 'المسجد الأقصى'؟",
+    "options": {"A":"أول مسجد بني في الإسلام", "B":"أولى القبلتين وثالث الحرمين", "C":"مسجد الرسول في المدينة", "D":"المسجد الحرام في مكة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 431,
+    "question": "ما هو 'يوم النحر'؟",
+    "options": {"A":"أول أيام عيد الفطر", "B":"أول أيام عيد الأضحى", "C":"يوم وقفة عرفة", "D":"آخر أيام الحج"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 432,
+    "question": "ما هي الصلاة التي تصلى عند طلب المطر من الله؟",
+    "options": {"A":"صلاة الخسوف", "B":"صلاة الاستخارة", "C":"صلاة الاستسقاء", "D":"صلاة الحاجة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 433,
+    "question": "ماذا يطلق على أقوال وأفعال الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"الفقه", "B":"التفسير", "C":"السنة النبوية", "D":"التاريخ الإسلامي"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 434,
+    "question": "من هم 'الأنصار'؟",
+    "options": {"A":"أهل مكة الذين هاجروا", "B":"أهل المدينة الذين نصروا الرسول", "C":"المقاتلون في غزوة بدر", "D":"الصحابة الذين كتبوا القرآن"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 435,
+    "question": "من هم 'المهاجرون'؟",
+    "options": {"A":"أهل المدينة", "B":"المسلمون الذين هاجروا من مكة إلى المدينة", "C":"القبائل العربية حول مكة", "D":"التجار في زمن الرسول"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 436,
+    "question": "ما اسم ابنة الرسول صلى الله عليه وسلم التي تزوجها علي بن أبي طالب؟",
+    "options": {"A":"رقية", "B":"زينب", "C":"فاطمة", "D":"أم كلثوم"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 437,
+    "question": "ما هو يوم الحج الأكبر؟",
+    "options": {"A":"يوم التروية", "B":"يوم عرفة", "C":"يوم النحر", "D":"يوم القر"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 438,
+    "question": "ما هي 'الناسخ والمنسوخ' في علوم القرآن؟",
+    "options": {"A":"آيات متشابهة في المعنى", "B":"رفع حكم شرعي بدليل شرعي لاحق", "C":"الآيات المكية والمدنية", "D":"أسباب نزول الآيات"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 439,
+    "question": "ما اسم الجبل الذي رست عليه سفينة نوح عليه السلام؟",
+    "options": {"A":"جبل الطور", "B":"جبل عرفات", "C":"جبل الجودي", "D":"جبل أحد"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 440,
+    "question": "من هو 'كليم الله'؟",
+    "options": {"A":"عيسى عليه السلام", "B":"إبراهيم عليه السلام", "C":"موسى عليه السلام", "D":"محمد صلى الله عليه وسلم"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 441,
+    "question": "ما هي 'سجدة التلاوة'؟",
+    "options": {"A":"سجدة في نهاية كل صلاة", "B":"سجدة عند قراءة آية فيها أمر بالسجود", "C":"سجدة الشكر لله", "D":"سجود السهو"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 442,
+    "question": "ما اسم الدابة التي ركبها الرسول صلى الله عليه وسلم في رحلة الإسراء؟",
+    "options": {"A":"القصواء", "B":"البراق", "C":"يعفور", "D":"دلدل"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 443,
+    "question": "من هو أول من أسلم من الرجال؟",
+    "options": {"A":"علي بن أبي طالب", "B":"زيد بن حارثة", "C":"أبو بكر الصديق", "D":"عمر بن الخطاب"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 444,
+    "question": "من هو أول من أسلم من الصبيان؟",
+    "options": {"A":"عبد الله بن عباس", "B":"علي بن أبي طالب", "C":"أسامة بن زيد", "D":"عبد الله بن عمر"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 445,
+    "question": "كم عدد آيات سورة الفاتحة؟",
+    "options": {"A":"خمس", "B":"ست", "C":"سبع", "D":"ثمان"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 446,
+    "question": "ما هي 'الزبانية'؟",
+    "options": {"A":"ملائكة الجنة", "B":"ملائكة العذاب في النار", "C":"نوع من الجن", "D":"أتباع الدجال"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 447,
+    "question": "ما اسم الغلام الذي كان مع موسى عليه السلام في رحلته للقاء الخضر؟",
+    "options": {"A":"هارون", "B":"يوشع بن نون", "C":"إلياس", "D":"صموئيل"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 448,
+    "question": "ما هي أركان الوضوء الأساسية؟",
+    "options": {"A":"ثلاثة", "B":"أربعة", "C":"خمسة", "D":"ستة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 449,
+    "question": "من هي مرضعة الرسول صلى الله عليه وسلم؟",
+    "options": {"A":"ثويبة", "B":"حليمة السعدية", "C":"أم أيمن", "D":"فاطمة بنت أسد"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 450,
+    "question": "ما هي 'الكوثر' التي أعطيت للنبي محمد صلى الله عليه وسلم؟",
+    "options": {"A":"نهر في الجنة", "B":"القرآن الكريم", "C":"النبوة", "D":"الشفاعة"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 451,
+    "question": "ما اسم والدة إسماعيل عليه السلام؟",
+    "options": {"A":"سارة", "B":"هاجر", "C":"رفقة", "D":"راحيل"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 452,
+    "question": "ما هو 'الميمنة' و 'المشأمة' المذكوران في سورة الواقعة؟",
+    "options": {"A":"اليمين واليسار", "B":"أهل الجنة وأهل النار", "C":"الليل والنهار", "D":"الخير والشر"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 453,
+    "question": "كم عدد أبناء الرسول محمد صلى الله عليه وسلم من الذكور؟",
+    "options": {"A":"اثنان", "B":"ثلاثة", "C":"أربعة", "D":"خمسة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 454,
+    "question": "كم عدد بنات الرسول محمد صلى الله عليه وسلم؟",
+    "options": {"A":"ثلاث", "B":"أربع", "C":"خمس", "D":"ست"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 455,
+    "question": "ما اسم السورة التي بدأت باسم نبي وانتهت باسم نبي؟",
+    "options": {"A":"يونس", "B":"هود", "C":"يوسف", "D":"الأعلى"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 456,
+    "question": "ماذا يطلق على صلاة الليل في رمضان؟",
+    "options": {"A":"التهجد", "B":"الوتر", "C":"التراويح", "D":"الضحى"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 457,
+    "question": "ما هو 'سجود السهو'؟",
+    "options": {"A":"سجدة عند نسيان ركن من أركان الصلاة", "B":"سجدة عند ارتكاب معصية", "C":"سجدة لشكر الله", "D":"سجدة في نهاية قراءة القرآن"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 458,
+    "question": "من هو 'الفاروق'؟",
+    "options": {"A":"أبو بكر الصديق", "B":"عمر بن الخطاب", "C":"عثمان بن عفان", "D":"علي بن أبي طالب"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 459,
+    "question": "ما هي 'المدينة المنورة' قبل هجرة النبي إليها؟",
+    "options": {"A":"بكة", "B":"يثرب", "C":"الطائف", "D":"خبير"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 460,
+    "question": "من هو النبي الذي كانت معجزته إحياء الموتى بإذن الله؟",
+    "options": {"A":"موسى", "B":"عيسى", "C":"سليمان", "D":"إبراهيم"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 461,
+    "question": "ما هو 'الإحرام'؟",
+    "options": {"A":"لباس الحجاج", "B":"نية الدخول في نسك الحج أو العمرة", "C":"مكان مقدس في مكة", "D":"شهر من الأشهر الحرم"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 462,
+    "question": "ما هي 'غزوة الخندق'؟",
+    "options": {"A":"غزوة أحد", "B":"غزوة بدر", "C":"غزوة تبوك", "D":"غزوة الأحزاب"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 463,
+    "question": "من هو النبي الذي آتاه الله ملكاً لم يؤته لأحد من بعده؟",
+    "options": {"A":"داود", "B":"سليمان", "C":"يوسف", "D":"ذو القرنين"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 464,
+    "question": "ما هو 'الطواف'؟",
+    "options": {"A":"السير بين الصفا والمروة", "B":"الدوران حول الكعبة", "C":"الوقوف بجبل عرفات", "D":"رمي الجمرات"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 465,
+    "question": "ما اسم كتاب الحديث الأصح بعد القرآن الكريم؟",
+    "options": {"A":"صحيح مسلم", "B":"سنن الترمذي", "C":"صحيح البخاري", "D":"موطأ مالك"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 466,
+    "question": "ما هي السورة التي ذكرت فيها قصة ذي القرنين؟",
+    "options": {"A":"الأنبياء", "B":"القصص", "C":"الكهف", "D":"لقمان"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 467,
+    "question": "ما هي 'الغيرة' المحمودة في الإسلام؟",
+    "options": {"A":"الحسد", "B":"غيرة الرجل على أهله", "C":"التنافس في الدنيا", "D":"الشك في الآخرين"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 468,
+    "question": "ما هي السجدة التي في سورة 'ص'؟",
+    "options": {"A":"سجدة تلاوة", "B":"سجدة شكر", "C":"سجدة صلاة", "D":"سجدة سهو"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 469,
+    "question": "من هو 'شيخ المرسلين'؟",
+    "options": {"A":"إبراهيم", "B":"نوح", "C":"آدم", "D":"محمد"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 470,
+    "question": "ما هو 'علم الجرح والتعديل'؟",
+    "options": {"A":"علم تفسير القرآن", "B":"علم يهتم برواة الحديث", "C":"علم الفقه المقارن", "D":"علم أصول الدين"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 471,
+    "question": "ما هي السورة التي تسمى سورة 'المنافقين'؟",
+    "options": {"A":"الأحزاب", "B":"المنافقون", "C":"الحشر", "D":"التوبة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 472,
+    "question": "ما هي السورة التي تسمى سورة 'بني إسرائيل'؟",
+    "options": {"A":"البقرة", "B":"المائدة", "C":"الإسراء", "D":"طه"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 473,
+    "question": "ما هو اسم الصحابي الذي تستحي منه الملائكة؟",
+    "options": {"A":"أبو بكر الصديق", "B":"عمر بن الخطاب", "C":"علي بن أبي طالب", "D":"عثمان بن عفان"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 474,
+    "question": "من هي 'ذات النطاقين'؟",
+    "options": {"A":"عائشة بنت أبي بكر", "B":"فاطمة الزهراء", "C":"أسماء بنت أبي بكر", "D":"خديجة بنت خويلد"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 475,
+    "question": "ما هو 'الصراط'؟",
+    "options": {"A":"طريق في الدنيا", "B":"جسر منصوب على ظهر جهنم", "C":"باب من أبواب الجنة", "D":"نهر في الجنة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 476,
+    "question": "كم عدد الذين خرجوا مع طالوت لقتال جالوت؟",
+    "options": {"A":"نفس عدد أهل بدر", "B":"نفس عدد أصحاب الكهف", "C":"سبعون رجلاً", "D":"ألف رجل"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 477,
+    "question": "ما هي أول عاصمة في تاريخ الدولة الإسلامية؟",
+    "options": {"A":"مكة المكرمة", "B":"المدينة المنورة", "C":"الكوفة", "D":"دمشق"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 478,
+    "question": "من هو 'أسد الله'؟",
+    "options": {"A":"خالد بن الوليد", "B":"علي بن أبي طالب", "C":"حمزة بن عبد المطلب", "D":"عمر بن الخطاب"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 479,
+    "question": "ما هي السورة التي بدأت بأحد حروف الهجاء؟",
+    "options": {"A":"الأنعام", "B":"الأنفال", "C":"ص", "D":"الفتح"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 480,
+    "question": "ما هو 'السعي' في الحج والعمرة؟",
+    "options": {"A":"الدوران حول الكعبة", "B":"الوقوف بعرفة", "C":"المشي بين الصفا والمروة", "D":"رمي الجمرات"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 481,
+    "question": "ما اسم السورة التي لا يوجد فيها حرف الميم؟",
+    "options": {"A":"الفلق", "B":"الكوثر", "C":"الإخلاص", "D":"النصر"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 482,
+    "question": "ما اسم والدة نبي الله عيسى عليه السلام؟",
+    "options": {"A":"حنة", "B":"هاجر", "C":"مريم", "D":"سارة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 483,
+    "question": "كم عدد أشهر الحج؟",
+    "options": {"A":"شهر واحد", "B":"شهران", "C":"ثلاثة أشهر", "D":"أربعة أشهر"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 484,
+    "question": "ما هو 'البرزخ'؟",
+    "options": {"A":"الحياة الدنيا", "B":"الحياة بعد الموت وقبل القيامة", "C":"يوم القيامة", "D":"الجنة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 485,
+    "question": "ما هي الصلاة الوسطى التي ذكرت في القرآن؟",
+    "options": {"A":"الفجر", "B":"الظهر", "C":"العصر", "D":"المغرب"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 486,
+    "question": "من هو النبي الذي صام عن الكلام ثلاثة أيام؟",
+    "options": {"A":"يونس", "B":"زكريا", "C":"يحيى", "D":"عيسى"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 487,
+    "question": "ما اسم الوادي الذي كلم الله فيه موسى عليه السلام؟",
+    "options": {"A":"وادي النيل", "B":"وادي طوى", "C":"وادي بكة", "D":"وادي حنيفة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 488,
+    "question": "ما هي السورة التي ذكرت فيها البسملة مرتين؟",
+    "options": {"A":"النمل", "B":"البقرة", "C":"يس", "D":"الرحمن"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 489,
+    "question": "ما هي 'الليالي العشر' التي أقسم الله بها؟",
+    "options": {"A":"العشر الأواخر من رمضان", "B":"العشر الأوائل من ذي الحجة", "C":"العشر الأوائل من محرم", "D":"عشر ليالٍ من الشتاء"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 490,
+    "question": "ما هو اسم والد يوسف عليه السلام؟",
+    "options": {"A":"إبراهيم", "B":"إسحاق", "C":"يعقوب", "D":"إسماعيل"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 491,
+    "question": "ماذا يطلق على صلاة طلب الخيرة في أمر ما؟",
+    "options": {"A":"صلاة الحاجة", "B":"صلاة الاستخارة", "C":"صلاة الشكر", "D":"صلاة التوبة"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 492,
+    "question": "ما هو 'التيمم'؟",
+    "options": {"A":"نوع من الصيام", "B":"الوضوء بالتراب عند فقدان الماء", "C":"دعاء خاص", "D":"صدقة للمحتاجين"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 493,
+    "question": "من هو 'الصديق'؟",
+    "options": {"A":"عمر بن الخطاب", "B":"أبو بكر", "C":"عثمان بن عفان", "D":"علي بن أبي طالب"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 494,
+    "question": "ما هو 'يوم التغابن'؟",
+    "options": {"A":"يوم القيامة", "B":"يوم المعركة", "C":"يوم السوق", "D":"يوم العيد"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 495,
+    "question": "ما هي الحشرة التي أهلك الله بها قوم أبرهة؟",
+    "options": {"A":"الجراد", "B":"البعوض", "C":"طير أبابيل", "D":"النمل"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 496,
+    "question": "ما هي السورة التي تعدل ثلث القرآن؟",
+    "options": {"A":"الفاتحة", "B":"يس", "C":"الإخلاص", "D":"الملك"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 497,
+    "question": "من هو النبي الذي كان يصنع الدروع؟",
+    "options": {"A":"إدريس", "B":"نوح", "C":"داود", "D":"سليمان"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 498,
+    "question": "من هو 'شاعر الرسول' صلى الله عليه وسلم؟",
+    "options": {"A":"كعب بن زهير", "B":"حسان بن ثابت", "C":"عبد الله بن رواحة", "D":"كعب بن مالك"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 499,
+    "question": "كم عدد المذاهب الفقهية السنية الأربعة؟",
+    "options": {"A":"ثلاثة", "B":"أربعة", "C":"خمسة", "D":"ستة"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 500,
+    "question": "ما هو 'الوقف' في الإسلام؟",
+    "options": {"A":"التوقف عن العمل", "B":"حبس الأصل وتسبيل المنفعة", "C":"إيقاف القتال", "D":"التوقف عند القراءة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 501,
+    "question": "ما هي السورة التي شفعت لصاحبها حتى غفر له؟",
+    "options": {"A":"يس", "B":"الواقعة", "C":"الرحمن", "D":"الملك"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 502,
+    "question": "ما هي عاصمة الخلافة العباسية؟",
+    "options": {"A":"دمشق", "B":"الكوفة", "C":"بغداد", "D":"القاهرة"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 503,
+    "question": "ما هو أكبر أبواب الجنة؟",
+    "options": {"A":"باب الصلاة", "B":"باب الجهاد", "C":"باب الصدقة", "D":"باب الريان"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 504,
+    "question": "ما هي الدابة التي ستخرج في آخر الزمان وتكلم الناس؟",
+    "options": {"A":"البراق", "B":"دابة الأرض", "C":"يعفور", "D":"القصواء"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 505,
+    "question": "من هو 'ترجمان القرآن'؟",
+    "options": {"A":"عبد الله بن مسعود", "B":"عبد الله بن عباس", "C":"أبي بن كعب", "D":"زيد بن ثابت"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 506,
+    "question": "ما هي 'صلاة الخوف'؟",
+    "options": {"A":"صلاة تصلى عند الخوف من شيء", "B":"صلاة تصلى في حالة الحرب والقتال", "C":"صلاة عند الكوارث الطبيعية", "D":"صلاة الاستغاثة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 507,
+    "question": "ما هو أول مسجد وضع في الأرض؟",
+    "options": {"A":"المسجد النبوي", "B":"المسجد الأقصى", "C":"المسجد الحرام", "D":"مسجد قباء"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 508,
+    "question": "ما هي 'الهاوية'؟",
+    "options": {"A":"اسم واد في الجنة", "B":"اسم درك من دركات النار", "C":"اسم بئر في الصحراء", "D":"اسم نجم في السماء"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 509,
+    "question": "ما هو 'عام الحزن'؟",
+    "options": {"A":"العام الذي توفيت فيه خديجة وأبو طالب", "B":"عام الهجرة إلى المدينة", "C":"عام غزوة أحد", "D":"العام الذي فرض فيه الصيام"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 510,
+    "question": "ما اسم السورة التي بدأت باسم فاكهة؟",
+    "options": {"A":"النحل", "B":"النمل", "C":"التين", "D":"الروم"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 511,
+    "question": "من هو النبي الذي كان يعمل نجاراً؟",
+    "options": {"A":"آدم", "B":"إدريس", "C":"نوح", "D":"زكريا"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 512,
+    "question": "ما هي 'الأشهر الحرم'؟",
+    "options": {"A":"رمضان وشوال وذو القعدة", "B":"محرم وصفر وربيع الأول", "C":"أربعة أشهر حرم فيها القتال", "D":"الأشهر التي فيها الحج"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 513,
+    "question": "ما اسم السورة التي تسمى 'القتال'؟",
+    "options": {"A":"الأنفال", "B":"الأحزاب", "C":"محمد", "D":"الفتح"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 514,
+    "question": "ما هي 'الواقعة'؟",
+    "options": {"A":"اسم معركة", "B":"اسم من أسماء يوم القيامة", "C":"اسم سورة في القرآن", "D":"جميع ما سبق"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 515,
+    "question": "من هو النبي الذي أوتي الحكمة وفصل الخطاب؟",
+    "options": {"A":"سليمان", "B":"داود", "C":"يوسف", "D":"موسى"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 516,
+    "question": "ما هو 'المقام المحمود'؟",
+    "options": {"A":"مقام إبراهيم عند الكعبة", "B":"مقام الشفاعة العظمى للنبي محمد", "C":"أعلى درجات الجنة", "D":"مكان في المسجد النبوي"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 517,
+    "question": "ما هي السورة التي بدأت بـ 'المر'؟",
+    "options": {"A":"الرعد", "B":"إبراهيم", "C":"الحجر", "D":"يونس"},
+    "answer": "A",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 518,
+    "question": "ما هو 'النسك'؟",
+    "options": {"A":"الصيام", "B":"العبادة والتقرب إلى الله", "C":"الاعتكاف", "D":"الزهد في الدنيا"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 519,
+    "question": "من هو 'خليل الله'؟",
+    "options": {"A":"محمد صلى الله عليه وسلم", "B":"موسى عليه السلام", "C":"عيسى عليه السلام", "D":"إبراهيم عليه السلام"},
+    "answer": "D",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 520,
+    "question": "ما هي السورة التي بدأت بالدعاء وانتهت بالدعاء؟",
+    "options": {"A":"الفاتحة", "B":"البقرة", "C":"المؤمنون", "D":"إبراهيم"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 521,
+    "question": "ما هي صلاة 'الضحى'؟",
+    "options": {"A":"صلاة بعد الفجر", "B":"صلاة بعد شروق الشمس وارتفاعها", "C":"صلاة قبل الظهر", "D":"صلاة بعد العصر"},
+    "answer": "B",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 522,
+    "question": "ما هو 'الإسراء'؟",
+    "options": {"A":"الصعود إلى السماء", "B":"الهجرة إلى الحبشة", "C":"السير ليلاً من المسجد الحرام إلى المسجد الأقصى", "D":"الهجرة إلى المدينة"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 523,
+    "question": "ما هو 'المعراج'؟",
+    "options": {"A":"الهجرة", "B":"السير ليلاً", "C":"الصعود من المسجد الأقصى إلى السماوات العلى", "D":"الرؤيا في المنام"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 524,
+    "question": "ما هي 'الآيات المتشابهات'؟",
+    "options": {"A":"آيات لها نفس المعنى", "B":"آيات تحمل أكثر من معنى وتحتاج لتفسير", "C":"الآيات التي تتحدث عن القصص", "D":"الآيات التي تتحدث عن الأحكام"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 525,
+    "question": "ما هو 'يوم التلاق'؟",
+    "options": {"A":"يوم عرفة", "B":"يوم الجمعة", "C":"يوم القيامة", "D":"يوم بدر"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 526,
+    "question": "ما هي عاصمة الخلافة الأموية؟",
+    "options": {"A":"مكة", "B":"المدينة", "C":"الكوفة", "D":"دمشق"},
+    "answer": "D",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 527,
+    "question": "من هو النبي الذي كان قومه ينحتون من الجبال بيوتاً؟",
+    "options": {"A":"هود", "B":"صالح", "C":"شعيب", "D":"لوط"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 528,
+    "question": "ما هي 'شجرة الزقوم'؟",
+    "options": {"A":"شجرة في الجنة", "B":"شجرة في الدنيا", "C":"شجرة في النار يأكل منها أهلها", "D":"شجرة سدرة المنتهى"},
+    "answer": "C",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 529,
+    "question": "ما هي 'دار السلام'؟",
+    "options": {"A":"مكة المكرمة", "B":"المدينة المنورة", "C":"الجنة", "D":"المسجد الأقصى"},
+    "answer": "C",
+    "difficulty": "easy",
+    "category": "islamic"
+  },
+  {
+    "id": 530,
+    "question": "ما هو 'الفرقان'؟",
+    "options": {"A":"القرآن الكريم", "B":"التوراة", "C":"الإنجيل", "D":"يوم بدر"},
+    "answer": "A",
+    "difficulty": "medium",
+    "category": "islamic"
+  },
+  {
+    "id": 531,
+    "question": "ما هي 'القوارع'؟",
+    "options": {"A":"السور التي تبدأ بـ 'قل'", "B":"السور الطويلة", "C":"الآيات التي تقرع القلوب", "D":"آيات الأحكام"},
+    "answer": "A",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 532,
+    "question": "ما هي السورة التي ورد فيها ذكر غزوة حنين؟",
+    "options": {"A":"الأنفال", "B":"الأحزاب", "C":"التوبة", "D":"الفتح"},
+    "answer": "C",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 533,
+    "question": "من هو 'ابن الذبيحين'؟",
+    "options": {"A":"إسماعيل بن إبراهيم", "B":"إسحاق بن إبراهيم", "C":"يعقوب بن إسحاق", "D":"النبي محمد صلى الله عليه وسلم"},
+    "answer": "D",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 534,
+    "question": "ما هي 'الرافضة'؟",
+    "options": {"A":"اسم لجماعة من الخوارج", "B":"اسم أطلق على طائفة من الشيعة", "C":"اسم لقبيلة عربية", "D":"اسم لمعركة"},
+    "answer": "B",
+    "difficulty": "hard",
+    "category": "islamic"
+  },
+  {
+    "id": 535,
+    "question": "ما هو 'الإلهام'؟",
+    "options": {"A":"الوحي للأنبياء", "B":"ما يلقيه الله في قلب العبد من الخير", "C":"الوسوسة من الشيطان", "D":"التفكير العميق"},
+    "answer": "B",
+    "difficulty": "medium",
+    "category": "islamic"
+  }
+]
