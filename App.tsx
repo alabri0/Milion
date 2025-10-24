@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import HomeScreen from './components/HomeScreen';
 import GameScreen from './components/GameScreen';
@@ -48,8 +49,8 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        // Use a relative path for questions.json to work in APK/WebView environments
-        const response = await fetch('./questions.json');
+        // Use an absolute path for questions.json to ensure it's loaded from the root.
+        const response = await fetch('/questions.json');
         if (!response.ok) {
           throw new Error('Failed to load questions.');
         }

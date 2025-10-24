@@ -1,18 +1,19 @@
+
 // services/audioService.ts
 export type SoundEffect = 'background' | 'correct' | 'wrong' | 'click' | 'timer' | 'win' | 'newQuestion' | 'fiftyFifty' | 'phoneFriend' | 'askAudience' | 'lose';
 
 const soundFiles: Record<SoundEffect, string> = {
-    background: './audio/background.mp3',
-    correct: './audio/correct.mp3',
-    wrong: './audio/wrong.mp3',
-    click: './audio/click.mp3',
-    timer: './audio/timer.mp3',
-    win: './audio/win.mp3',
-    newQuestion: './audio/newQuestion.mp3',
-    fiftyFifty: './audio/fiftyFifty.mp3',
-    phoneFriend: './audio/phoneFriend.mp3',
-    askAudience: './audio/askAudience.mp3',
-    lose: './audio/lose.mp3',
+    background: '/audio/background.mp3',
+    correct: '/audio/correct.mp3',
+    wrong: '/audio/wrong.mp3',
+    click: '/audio/click.mp3',
+    timer: '/audio/timer.mp3',
+    win: '/audio/win.mp3',
+    newQuestion: '/audio/newQuestion.mp3',
+    fiftyFifty: '/audio/fiftyFifty.mp3',
+    phoneFriend: '/audio/phoneFriend.mp3',
+    askAudience: '/audio/askAudience.mp3',
+    lose: '/audio/lose.mp3',
 };
 
 // Sounds that are long-running or should not have multiple instances playing at once.
@@ -57,17 +58,18 @@ export class AudioService {
         const originalSound = this.sounds.get(soundName);
         if (!originalSound) return;
 
-        // For long-running sounds or sounds that need to be controlled (start/stop),
-        // we use a single instance.
         if (singleInstanceSounds.includes(soundName)) {
-            originalSound.loop = loop;
-            originalSound.currentTime = 0;
-            originalSound.play().catch(e => console.warn(`Could not play sound ${soundName}:`, e));
+            // For single-instance sounds, only play if it's not already playing.
+            // This prevents restarting sounds like the timer every second.
+            if (originalSound.paused) {
+                originalSound.loop = loop;
+                originalSound.currentTime = 0;
+                originalSound.play().catch(e => console.warn(`Could not play sound ${soundName}:`, e));
+            }
         } else {
-            // For short, one-shot sound effects, we create a new Audio object on the fly.
-            // This allows multiple instances of the same sound to play simultaneously (e.g., rapid clicks)
-            // and prevents one sound from cutting off another.
-            const soundInstance = new Audio(originalSound.src);
+            // For one-shot effects, clone the pre-loaded audio element to allow for overlapping playback.
+            // This is more reliable than `new Audio(src)` in some browsers.
+            const soundInstance = originalSound.cloneNode() as HTMLAudioElement;
             soundInstance.play().catch(e => console.warn(`Could not play sound effect instance ${soundName}:`, e));
         }
     }

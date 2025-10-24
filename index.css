@@ -1,7 +1,8 @@
+
 body {
   font-family: 'Cairo', sans-serif;
   /* Apply a dark overlay on the background image to ensure text readability */
-  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85)), url('./back.jpg');
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85)), url('/back.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

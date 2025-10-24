@@ -72,6 +72,25 @@ const GameScreen: React.FC<GameScreenProps> = ({ gameState, onGameEnd, settings,
       }
     };
   }, []);
+  
+  // Speech synthesis keep-alive for browsers that disconnect after inactivity (e.g., Chrome)
+  useEffect(() => {
+    let keepAliveInterval: ReturnType<typeof setInterval>;
+    if ('speechSynthesis' in window) {
+        keepAliveInterval = setInterval(() => {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.pause();
+                window.speechSynthesis.resume();
+            }
+        }, 10000); // every 10 seconds
+    }
+    
+    return () => {
+        if (keepAliveInterval) {
+            clearInterval(keepAliveInterval);
+        }
+    };
+  }, []);
 
   useEffect(() => {
     setVisibleOptions(currentQuestion.options);
@@ -170,8 +189,8 @@ const GameScreen: React.FC<GameScreenProps> = ({ gameState, onGameEnd, settings,
 
       utterance.onstart = () => setIsSpeaking(true);
       utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = (event) => {
-          console.error('An error occurred during speech synthesis:', event);
+      utterance.onerror = (event: SpeechSynthesisErrorEvent) => {
+          console.error('An error occurred during speech synthesis:', event.error);
           setIsSpeaking(false);
       };
 
