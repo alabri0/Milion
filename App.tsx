@@ -161,7 +161,7 @@ const App: React.FC = () => {
         if (e instanceof Error) {
             const msg = e.message.toLowerCase();
             if (msg.includes('api key')) {
-                detailedMessage = '(خطأ في الإعداد: مفتاح الواجهة البرمجية غير صالح أو مفقود)';
+                detailedMessage = '(خطأ في الإعداد: مفتاح الواجهة البرمجية (API Key) غير صالح أو مفقود. على مسؤول التطبيق، يرجى التأكد من إضافته كمتغير بيئة (environment variable) في خدمة الاستضافة.)';
             } else if (msg.includes('quota')) {
                 detailedMessage = '(تم تجاوز حصة الاستخدام المتاحة)';
             } else if (msg.includes('network') || msg.includes('fetch')) {
@@ -194,6 +194,7 @@ const App: React.FC = () => {
 
   const handleGoHome = () => {
     setGameState(null);
+    setError(null);
     setScreen(Screen.Home);
   };
 
