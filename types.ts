@@ -1,6 +1,6 @@
 
 
-export type Category = 'general' | 'history' | 'science' | 'geography' | 'art-literature' | 'sports' | 'islamic';
+export type Category = string;
 
 export interface Question {
   id: number;
