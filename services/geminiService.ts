@@ -59,13 +59,13 @@ export const generateQuestions = async (topic: string, age: number | null): Prom
       3.  An "options" object with four distinct choices labeled "A", "B", "C", and "D".
       4.  An "answer" field containing the key of the correct option.
       5.  The "difficulty" as a string ('easy', 'medium', or 'hard').
-      6.  The "category" for all questions must be the topic you were given: "${topic}".
+      6.  The "category" for all questions must be the given topic: "${topic}".
 
       Your output must be a valid JSON array that strictly follows the provided schema. Do not include any extra text, explanations, or markdown formatting outside of the JSON array.
     `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-flash-latest",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
