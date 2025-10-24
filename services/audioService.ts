@@ -1,4 +1,3 @@
-
 // services/audioService.ts
 export type SoundEffect = 'background' | 'correct' | 'wrong' | 'click' | 'timer' | 'win' | 'newQuestion' | 'fiftyFifty' | 'phoneFriend' | 'askAudience' | 'lose';
 
@@ -7,111 +6,162 @@ const soundFiles: Record<SoundEffect, string> = {
     correct: '/audio/correct.mp3',
     wrong: '/audio/wrong.mp3',
     click: '/audio/click.mp3',
-    timer: '/audio/timer.mp3',
+    timer: '/audio/timer.wav',
     win: '/audio/win.mp3',
-    newQuestion: '/audio/newQuestion.mp3',
+    newQuestion: '/audio/newQuestion.wav',
     fiftyFifty: '/audio/fiftyFifty.mp3',
     phoneFriend: '/audio/phoneFriend.mp3',
     askAudience: '/audio/askAudience.mp3',
     lose: '/audio/lose.mp3',
 };
 
-// Sounds that are long-running or should not have multiple instances playing at once.
-const singleInstanceSounds: SoundEffect[] = ['background', 'timer'];
-
+// Sounds that are long-running or should not have multiple instances playing at once
+const singletonSounds: Set<SoundEffect> = new Set(['background', 'timer']);
 
 export class AudioService {
-    private sounds: Map<SoundEffect, HTMLAudioElement> = new Map();
-    private isBackgroundMusicMuted: boolean = false;
-    private isSoundEffectsMuted: boolean = false;
-    private isInitialized: boolean = false;
+  private audioContext: AudioContext | null = null;
+  private soundBuffers: Map<SoundEffect, AudioBuffer> = new Map();
+  private playingSources: Map<SoundEffect, AudioBufferSourceNode[]> = new Map();
+  private isBackgroundMusicMuted: boolean = false;
+  private areSoundEffectsMuted: boolean = false;
+  private isLoaded: boolean = false;
+  private isLoading: boolean = false;
 
-    // This method must be called from a user gesture (e.g., a click event)
-    // to unlock the AudioContext in modern browsers.
-    public init() {
-        if (this.isInitialized) return;
-        this.loadAudio();
-        this.isInitialized = true;
+  private async initAudioContext() {
+    if (this.audioContext && this.audioContext.state !== 'suspended') {
+      return;
     }
-
-    private loadAudio() {
-        // Pre-load all audio files into Audio elements.
-        for (const key in soundFiles) {
-            const soundName = key as SoundEffect;
-            const audio = new Audio(soundFiles[soundName]);
-            audio.preload = 'auto';
-            this.sounds.set(soundName, audio);
-        }
+    try {
+      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      if (this.audioContext.state === 'suspended') {
+        await this.audioContext.resume();
+      }
+    } catch (e) {
+      console.error("Web Audio API is not supported in this browser", e);
     }
+  }
 
-    public play(soundName: SoundEffect, loop: boolean = false) {
-        if (!this.isInitialized) {
-            console.warn(`AudioService not initialized. Cannot play ${soundName}.`);
-            return;
-        }
-
-        const isBackground = soundName === 'background';
-        if ((isBackground && this.isBackgroundMusicMuted) || (!isBackground && this.isSoundEffectsMuted)) {
-            return;
-        }
-
-        const originalSound = this.sounds.get(soundName);
-        if (!originalSound) return;
-
-        if (singleInstanceSounds.includes(soundName)) {
-            // For single-instance sounds, only play if it's not already playing.
-            // This prevents restarting sounds like the timer every second.
-            if (originalSound.paused) {
-                originalSound.loop = loop;
-                originalSound.currentTime = 0;
-                originalSound.play().catch(e => console.warn(`Could not play sound ${soundName}:`, e));
-            }
-        } else {
-            // For one-shot effects, clone the pre-loaded audio element to allow for overlapping playback.
-            // This is more reliable than `new Audio(src)` in some browsers.
-            const soundInstance = originalSound.cloneNode() as HTMLAudioElement;
-            soundInstance.play().catch(e => console.warn(`Could not play sound effect instance ${soundName}:`, e));
-        }
+  private async loadSound(name: SoundEffect, url: string): Promise<void> {
+    if (!this.audioContext) return;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to load sound: ${url} (status: ${response.status})`);
+      }
+      const arrayBuffer = await response.arrayBuffer();
+      const audioBuffer = await this.audioContext.decodeAudioData(arrayBuffer);
+      this.soundBuffers.set(name, audioBuffer);
+    } catch (e) {
+      console.error(`Error loading sound ${name}:`, e);
     }
-    
-    // playClick is the designated function to be called on first user interaction.
-    public playClick() {
-        this.init(); // Initialize on the first click.
-        this.play('click');
+  }
+
+  public async loadAllSounds(): Promise<void> {
+    if (this.isLoaded || this.isLoading || !this.audioContext) return;
+    this.isLoading = true;
+    const promises: Promise<void>[] = [];
+    for (const [name, url] of Object.entries(soundFiles)) {
+      promises.push(this.loadSound(name as SoundEffect, url));
     }
+    await Promise.all(promises);
+    this.isLoaded = true;
+    this.isLoading = false;
+    console.log("All sounds loaded.");
+  }
 
-    public stop(soundName: SoundEffect) {
-        if (!this.isInitialized) return;
-
-        // We can only stop single-instance sounds.
-        const sound = this.sounds.get(soundName);
-        if (sound && singleInstanceSounds.includes(soundName)) {
-            sound.pause();
-            sound.currentTime = 0;
+  public play(name: SoundEffect, loop: boolean = false): void {
+    if (!this.audioContext) {
+      this.initAudioContext().then(() => {
+        if (this.audioContext) {
+            this.loadAllSounds().then(() => this.playSound(name, loop));
         }
+      });
+      return;
     }
     
-    public stopAll() {
-        this.sounds.forEach((sound, name) => {
-             if (singleInstanceSounds.includes(name)) {
-                sound.pause();
-                sound.currentTime = 0;
+    if(!this.isLoaded) {
+       this.loadAllSounds().then(() => this.playSound(name, loop));
+       return;
+    }
+
+    this.playSound(name, loop);
+  }
+  
+  private playSound(name: SoundEffect, loop: boolean = false): void {
+    if (!this.audioContext) return;
+    
+    if (name === 'background' && this.isBackgroundMusicMuted) return;
+    if (name !== 'background' && this.areSoundEffectsMuted) return;
+
+    const buffer = this.soundBuffers.get(name);
+    if (!buffer) {
+      console.warn(`Sound ${name} not loaded.`);
+      return;
+    }
+
+    if (singletonSounds.has(name)) {
+      this.stop(name);
+    }
+
+    const source = this.audioContext.createBufferSource();
+    source.buffer = buffer;
+    source.loop = loop;
+    source.connect(this.audioContext.destination);
+    source.start(0);
+    
+    source.onended = () => {
+        if (this.playingSources.has(name)) {
+            const sources = this.playingSources.get(name)!.filter(s => s !== source);
+            if (sources.length > 0) {
+                this.playingSources.set(name, sources);
+            } else {
+                this.playingSources.delete(name);
             }
+        }
+    };
+
+    if (!this.playingSources.has(name)) {
+        this.playingSources.set(name, []);
+    }
+    this.playingSources.get(name)!.push(source);
+  }
+  
+  public playClick(): void {
+    this.play('click');
+  }
+
+  public stop(name: SoundEffect): void {
+    const sources = this.playingSources.get(name);
+    if (sources) {
+      sources.forEach(source => {
+        try { source.stop(); } catch (e) { /* Can error if already stopped, ignore */ }
+      });
+      this.playingSources.delete(name);
+    }
+  }
+
+  public stopAll(): void {
+    this.playingSources.forEach((sources, name) => {
+      this.stop(name as SoundEffect);
+    });
+    this.playingSources.clear();
+  }
+  
+  public setBackgroundMusicMuted(muted: boolean): void {
+    this.isBackgroundMusicMuted = muted;
+    if (muted) {
+      this.stop('background');
+    }
+  }
+
+  public setSoundEffectsMuted(muted: boolean): void {
+    this.areSoundEffectsMuted = muted;
+    if (muted) {
+        this.playingSources.forEach((sources, name) => {
+          if(name !== 'background') {
+            this.stop(name as SoundEffect);
+          }
         });
     }
-
-    public setBackgroundMusicMuted(muted: boolean) {
-        this.isBackgroundMusicMuted = muted;
-        if (muted) {
-            this.stop('background');
-        }
-        // The app's main logic should handle re-playing background music if unmuted.
-    }
-
-    public setSoundEffectsMuted(muted: boolean) {
-        this.isSoundEffectsMuted = muted;
-        if (muted) {
-            this.stop('timer'); // Stop the timer if all SFX are muted.
-        }
-    }
+  }
 }

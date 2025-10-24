@@ -72,25 +72,6 @@ const GameScreen: React.FC<GameScreenProps> = ({ gameState, onGameEnd, settings,
       }
     };
   }, []);
-  
-  // Speech synthesis keep-alive for browsers that disconnect after inactivity (e.g., Chrome)
-  useEffect(() => {
-    let keepAliveInterval: ReturnType<typeof setInterval>;
-    if ('speechSynthesis' in window) {
-        keepAliveInterval = setInterval(() => {
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.pause();
-                window.speechSynthesis.resume();
-            }
-        }, 10000); // every 10 seconds
-    }
-    
-    return () => {
-        if (keepAliveInterval) {
-            clearInterval(keepAliveInterval);
-        }
-    };
-  }, []);
 
   useEffect(() => {
     setVisibleOptions(currentQuestion.options);
@@ -148,53 +129,72 @@ const GameScreen: React.FC<GameScreenProps> = ({ gameState, onGameEnd, settings,
   const readQuestionAloud = useCallback(() => {
     try {
       if (!('speechSynthesis' in window) || settings.ttsMode === 'off') {
-          if (settings.ttsMode !== 'off' && settings.ttsMode !== 'auto') alert('عذراً، متصفحك لا يدعم خاصية قراءة النص.');
-          return;
+        if (settings.ttsMode !== 'off' && settings.ttsMode !== 'auto') {
+          alert('عذراً، متصفحك لا يدعم خاصية قراءة النص.');
+        }
+        return;
       }
 
+      // If speech is already in progress, cancel it. If user clicks again, it stops.
       if (window.speechSynthesis.speaking) {
-          window.speechSynthesis.cancel();
-          setIsSpeaking(false);
-          return;
+        window.speechSynthesis.cancel();
+        setIsSpeaking(false);
+        return;
       }
 
       if (!arabicVoice) {
-          console.warn('لم يتم العثور على صوت عربي مثبت. قد تكون جودة القراءة رديئة.');
+        console.warn('لم يتم العثور على صوت عربي مثبت. قد تكون جودة القراءة رديئة.');
       }
 
       const optionLetterToWord: { [key: string]: string } = {
-          'A': 'ألف',
-          'B': 'باء',
-          'C': 'جيم',
-          'D': 'دال',
+        A: 'ألف', B: 'باء', C: 'جيم', D: 'دال',
+      };
+      
+      // Helper to create a configured utterance
+      const createUtterance = (text: string) => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        if (arabicVoice) {
+          utterance.voice = arabicVoice;
+        }
+        utterance.lang = 'ar-SA';
+        utterance.rate = 0.9;
+        utterance.pitch = 1;
+        return utterance;
       };
 
       const questionText = currentQuestion.question;
       const optionsToRead = visibleOptions || currentQuestion.options;
-      const optionsText = Object.entries(optionsToRead)
-          .map(([key, value]) => `الخيار ${optionLetterToWord[key] || key}. ${value}`)
-          .join('. ');
 
-      const fullText = `السؤال هو: ${questionText}. ${optionsText}`;
+      // Create an array of utterances to be spoken in sequence
+      const utterances = [
+        createUtterance(`السؤال هو: ${questionText}`)
+      ];
 
-      const utterance = new SpeechSynthesisUtterance(fullText);
+      Object.entries(optionsToRead).forEach(([key, value]) => {
+        utterances.push(createUtterance(`الخيار ${optionLetterToWord[key] || key}. ${value}`));
+      });
       
-      if (arabicVoice) {
-          utterance.voice = arabicVoice;
+      // We only need to set the handlers on the first and last utterances
+      // to control the global 'isSpeaking' state for the whole sequence.
+      if (utterances.length > 0) {
+        utterances[0].onstart = () => setIsSpeaking(true);
+
+        const lastUtterance = utterances[utterances.length - 1];
+        lastUtterance.onend = () => setIsSpeaking(false);
+
+        utterances.forEach(u => {
+          u.onerror = (event: SpeechSynthesisErrorEvent) => {
+            console.error('An error occurred during speech synthesis:', event.error);
+            setIsSpeaking(false);
+            // Clear the queue on any error
+            window.speechSynthesis.cancel();
+          };
+        });
+
+        // Queue all utterances
+        utterances.forEach(u => window.speechSynthesis.speak(u));
       }
-      
-      utterance.lang = 'ar-SA';
-      utterance.rate = 0.9;
-      utterance.pitch = 1;
 
-      utterance.onstart = () => setIsSpeaking(true);
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = (event: SpeechSynthesisErrorEvent) => {
-          console.error('An error occurred during speech synthesis:', event.error);
-          setIsSpeaking(false);
-      };
-
-      window.speechSynthesis.speak(utterance);
     } catch (e) {
       console.error("SpeechSynthesis API failed to execute.", e);
       setIsSpeaking(false);

@@ -7,6 +7,7 @@ import LeaderboardScreen from './components/LeaderboardScreen';
 import { GameState, Question, GameScreen as Screen, SettingsState, ScoreEntry } from './types';
 import { AudioService } from './services/audioService';
 import { generateQuestions } from './services/geminiService';
+import { PRIZE_LEVELS } from './constants';
 
 const App: React.FC = () => {
   const [screen, setScreen] = useState<Screen>(Screen.Home);
@@ -24,228 +25,218 @@ const App: React.FC = () => {
     categories: ['general'],
     ttsMode: 'manual',
   });
+  const [lastAiTopic, setLastAiTopic] = useState<string>('');
+  const [lastAiAge, setLastAiAge] = useState<number | null>(null);
   
   const audioService = useRef(new AudioService()).current;
 
+  // Audio settings effect
   useEffect(() => {
     audioService.setBackgroundMusicMuted(!settings.backgroundMusicEnabled);
     audioService.setSoundEffectsMuted(!settings.soundEffectsEnabled);
   }, [settings.backgroundMusicEnabled, settings.soundEffectsEnabled, audioService]);
   
+  // Music control effect based on screen
   useEffect(() => {
-    if (screen === Screen.Game) {
-        audioService.play('background', true);
-    } else {
-        audioService.stop('background');
+    if (screen === Screen.Home) {
+      audioService.stopAll();
+      audioService.play('background', true);
+    } else if (screen === Screen.End && gameState) {
+      audioService.stopAll();
+      if (gameState.score === PRIZE_LEVELS[PRIZE_LEVELS.length - 1]) {
+        audioService.play('win');
+      } else if(gameState.score > 0) {
+        audioService.play('win');
+      }
+      else {
+        audioService.play('lose');
+      }
+    } else if (screen !== Screen.Game) {
+      audioService.stop('timer'); // Stop timer if we leave game screen for any reason
     }
-    
-    return () => {
-        audioService.stopAll();
-    }
-  }, [screen, audioService]);
+  }, [screen, audioService, gameState]);
 
-
+  // Load initial data effect
   useEffect(() => {
-    const fetchQuestions = async () => {
+    const loadGameData = async () => {
       try {
+        setLoading(true);
+        setError(null);
         const response = await fetch('/questions.json');
         if (!response.ok) {
-          throw new Error('Failed to load questions.');
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data: Question[] = await response.json();
+        const data = await response.json();
         setQuestions(data);
-      } catch (err) {
-        setError('لا يمكن تحميل بنك الأسئلة. الرجاء المحاولة مرة أخرى.');
-        console.error(err);
+      } catch (e) {
+        console.error("Failed to load questions:", e);
+        setError('فشل تحميل بنك الأسئلة. الرجاء المحاولة مرة أخرى.');
       } finally {
         setLoading(false);
       }
     };
-    
+
     const loadLeaderboard = () => {
         try {
             const savedScores = localStorage.getItem('leaderboard');
-            if (savedScores) {
-              setLeaderboard(JSON.parse(savedScores));
+            if(savedScores) {
+                setLeaderboard(JSON.parse(savedScores));
             }
         } catch (e) {
-            console.error("Failed to load leaderboard from localStorage", e);
+            console.error("Failed to load leaderboard:", e);
         }
     };
-
-    fetchQuestions();
+    
+    loadGameData();
     loadLeaderboard();
   }, []);
 
-  const startGame = useCallback(() => {
-    audioService.playClick();
-    setError(null);
+  const filterAndSelectQuestions = useCallback((gameQuestions: Question[]): Question[] => {
+    let filtered = gameQuestions;
 
-    if (!questions || questions.length === 0) {
-        setError('بنك الأسئلة غير متوفر أو فارغ. لا يمكن بدء اللعبة.');
-        return;
-    }
-
-    let gameQuestions: Question[] = [];
-    const shuffleArray = (array: Question[]) => [...array].sort(() => 0.5 - Math.random());
-
-    const categoryFilteredQuestions = settings.categories.includes('general') || settings.categories.length === 0
-      ? questions
-      : questions.filter(q => settings.categories.includes(q.category));
-
-    if (settings.difficulty === 'mixed') {
-        const easyQuestions = categoryFilteredQuestions.filter(q => q.difficulty === 'easy');
-        const mediumQuestions = categoryFilteredQuestions.filter(q => q.difficulty === 'medium');
-        const hardQuestions = categoryFilteredQuestions.filter(q => q.difficulty === 'hard');
-
-        if (easyQuestions.length < 5 || mediumQuestions.length < 5 || hardQuestions.length < 5) {
-            setError('لا توجد أسئلة كافية من كل مستوى صعوبة في التخصصات المحددة لبدء اللعبة بالوضع المتدرج.');
-            return;
-        }
-        const selectedEasy = shuffleArray(easyQuestions).slice(0, 5);
-        const selectedMedium = shuffleArray(mediumQuestions).slice(0, 5);
-        const selectedHard = shuffleArray(hardQuestions).slice(0, 5);
-        gameQuestions = [...selectedEasy, ...selectedMedium, ...selectedHard].sort(() => Math.random() - 0.5);
-    } else {
-        const filteredQuestions = categoryFilteredQuestions.filter(q => q.difficulty === settings.difficulty);
-        if (filteredQuestions.length < 15) {
-            setError(`لا توجد أسئلة كافية (15) من مستوى الصعوبة والتخصصات المحددة.`);
-            return;
-        }
-        gameQuestions = shuffleArray(filteredQuestions).slice(0, 15);
+    if (settings.categories.length > 0 && !settings.categories.includes('general')) {
+        filtered = filtered.filter(q => settings.categories.includes(q.category));
     }
     
-    if (gameQuestions.length > 0) {
-        setGameState({
-          currentQuestionIndex: 0,
-          score: 0,
-          lifelines: {
-            fiftyFifty: true,
-            phoneFriend: true,
-            askAudience: true,
-          },
-          guaranteedScore: 0,
-          questions: gameQuestions,
-        });
-        setScreen(Screen.Game);
+    if (settings.difficulty !== 'mixed') {
+        filtered = filtered.filter(q => q.difficulty === settings.difficulty);
     }
-  }, [questions, settings, audioService]);
+    
+    if (filtered.length < 15) {
+        console.warn("Not enough questions for selected filters, using all questions.");
+        filtered = gameQuestions;
+    }
+
+    return filtered.sort(() => 0.5 - Math.random()).slice(0, 15);
+  }, [settings.categories, settings.difficulty]);
+
+
+  const startGame = (gameMode: 'normal' | 'ai', aiQuestions: Question[] | null = null) => {
+    setError(null);
+    let gameQuestions: Question[];
+
+    if (gameMode === 'ai' && aiQuestions) {
+      gameQuestions = aiQuestions;
+    } else {
+      gameQuestions = filterAndSelectQuestions(questions);
+    }
+    
+    if (gameQuestions.length < 15) {
+      setError('لا يوجد عدد كاف من الأسئلة لبدء اللعبة. حاول تغيير إعدادات الفئة أو الصعوبة.');
+      setScreen(Screen.Home);
+      return;
+    }
+
+    setGameState({
+      currentQuestionIndex: 0,
+      score: 0,
+      lifelines: {
+        fiftyFifty: true,
+        phoneFriend: true,
+        askAudience: true,
+      },
+      guaranteedScore: 0,
+      questions: gameQuestions,
+      gameMode,
+    });
+    setScreen(Screen.Game);
+  };
 
   const startAiGame = async (topic: string, age: number | null) => {
-    audioService.playClick();
-    setError(null);
     setLoading(true);
-    setLoadingMessage('...جاري توليد الأسئلة بالذكاء الاصطناعي');
-
+    setLoadingMessage(`...جاري توليد أسئلة عن "${topic}"`);
+    setError(null);
+    setLastAiTopic(topic);
+    setLastAiAge(age);
     try {
-        const gameQuestions = await generateQuestions(topic, age);
-        
-        if (gameQuestions.length < 15) {
-            throw new Error('لم يتمكن الذكاء الاصطناعي من توليد أسئلة كافية.');
+        const aiQuestions = await generateQuestions(topic, age);
+        if (aiQuestions.length < 15) {
+          throw new Error('AI failed to generate a full set of 15 questions.');
         }
-        
-        setGameState({
-          currentQuestionIndex: 0,
-          score: 0,
-          lifelines: {
-            fiftyFifty: true,
-            phoneFriend: true,
-            askAudience: true,
-          },
-          guaranteedScore: 0,
-          questions: gameQuestions,
-        });
-        setScreen(Screen.Game);
-
-    } catch (err) {
-        console.error(err);
-        setError('حدث خطأ أثناء توليد الأسئلة. الرجاء التأكد من اتصالك بالإنترنت والمحاولة مرة أخرى.');
+        startGame('ai', aiQuestions);
+    } catch (e) {
+        console.error(e);
+        setError('حدث خطأ أثناء توليد الأسئلة. الرجاء المحاولة مرة أخرى أو تجربة موضوع آخر.');
+        setScreen(Screen.Home);
     } finally {
         setLoading(false);
-        setLoadingMessage('...جاري تحميل بنك الأسئلة'); // Reset message
     }
   };
 
-  const endGame = useCallback((finalScore: number) => {
-    if (gameState) {
-      if (finalScore > 0) {
-        audioService.play('win');
-      } else {
-        audioService.play('lose');
-      }
-      setGameState({ ...gameState, score: finalScore });
-      setScreen(Screen.End);
+  const handleGameEnd = (finalScore: number) => {
+    if(gameState){
+       setGameState(prev => prev ? { ...prev, score: finalScore } : null);
     }
-  }, [gameState, audioService]);
+    setScreen(Screen.End);
+  };
   
-  const handleSaveScore = useCallback((name: string, score: number) => {
-    audioService.playClick();
+  const handleRestart = () => {
+    if (gameState?.gameMode === 'ai') {
+        startAiGame(lastAiTopic, lastAiAge);
+    } else {
+        startGame('normal');
+    }
+  };
+
+  const handleGoHome = () => {
+    setGameState(null);
+    setScreen(Screen.Home);
+  };
+
+  const handleSaveScore = (name: string, score: number) => {
     const newEntry: ScoreEntry = { name, score };
-    const updatedLeaderboard = [...leaderboard, newEntry]
+    const newLeaderboard = [...leaderboard, newEntry]
       .sort((a, b) => b.score - a.score)
       .slice(0, 10);
-    setLeaderboard(updatedLeaderboard);
-    try {
-        localStorage.setItem('leaderboard', JSON.stringify(updatedLeaderboard));
-    } catch (e) {
-        console.error("Failed to save leaderboard to localStorage", e);
-    }
-  }, [leaderboard, audioService]);
+    setLeaderboard(newLeaderboard);
+    localStorage.setItem('leaderboard', JSON.stringify(newLeaderboard));
+  };
 
-  const goToHome = useCallback(() => {
-    audioService.playClick();
-    setScreen(Screen.Home);
-    setError(null); // Clear errors when going home
-  }, [audioService]);
-
-  const goToSettings = useCallback(() => {
-    audioService.playClick();
-    setScreen(Screen.Settings);
-  }, [audioService]);
-
-  const goToLeaderboard = useCallback(() => {
-    audioService.playClick();
-    setScreen(Screen.Leaderboard);
-  }, [audioService]);
-
-  const handleSaveSettings = useCallback((newSettings: SettingsState) => {
-    audioService.playClick();
+  const handleSaveSettings = (newSettings: SettingsState) => {
     setSettings(newSettings);
     setScreen(Screen.Home);
-  }, [audioService]);
+  };
 
-  const renderScreen = () => {
+
+  const renderContent = () => {
     if (loading) {
-      return <div className="flex flex-col items-center justify-center h-screen text-2xl font-bold animate-pulse">{loadingMessage}</div>;
-    }
-    if (error) {
       return (
-        <div className="flex flex-col items-center justify-center h-screen text-center p-4">
-          <p className="text-2xl text-red-400 mb-4">{error}</p>
-          <button onClick={goToHome} className="px-8 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold">
+        <div className="flex flex-col items-center justify-center text-center p-8">
+          <div className="w-16 h-16 border-4 border-amber-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+          <p className="text-xl">{loadingMessage}</p>
+        </div>
+      );
+    }
+
+    if (error) {
+       return (
+        <div className="flex flex-col items-center justify-center text-center p-8 bg-red-900/50 rounded-lg">
+          <p className="text-xl text-red-300 mb-4">{error}</p>
+          <button onClick={handleGoHome} className="px-8 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold">
             العودة للرئيسية
           </button>
         </div>
       );
     }
+
     switch (screen) {
       case Screen.Game:
-        return gameState && <GameScreen gameState={gameState} onGameEnd={endGame} settings={settings} audioService={audioService} />;
+        return gameState && <GameScreen gameState={gameState} onGameEnd={handleGameEnd} settings={settings} audioService={audioService} />;
       case Screen.End:
-        return gameState && <EndScreen score={gameState.score} onRestart={startGame} onGoHome={goToHome} onSaveScore={handleSaveScore} leaderboard={leaderboard} audioService={audioService} />;
+        return gameState && <EndScreen score={gameState.score} onRestart={handleRestart} onGoHome={handleGoHome} onSaveScore={handleSaveScore} leaderboard={leaderboard} audioService={audioService}/>;
       case Screen.Settings:
-        return <SettingsScreen initialSettings={settings} onSave={handleSaveSettings} onCancel={goToHome} audioService={audioService} />;
+        return <SettingsScreen initialSettings={settings} onSave={handleSaveSettings} onCancel={handleGoHome} audioService={audioService} />;
       case Screen.Leaderboard:
-        return <LeaderboardScreen scores={leaderboard} onGoHome={goToHome} audioService={audioService}/>;
+        return <LeaderboardScreen scores={leaderboard} onGoHome={handleGoHome} audioService={audioService} />;
       case Screen.Home:
       default:
-        return <HomeScreen onStartGame={startGame} onStartAiGame={startAiGame} onGoToSettings={goToSettings} onGoToLeaderboard={goToLeaderboard} audioService={audioService} />;
+        return <HomeScreen onStartGame={() => startGame('normal')} onStartAiGame={startAiGame} onGoToSettings={() => setScreen(Screen.Settings)} onGoToLeaderboard={() => setScreen(Screen.Leaderboard)} audioService={audioService} />;
     }
   };
 
   return (
-    <main className="flex items-center justify-center min-h-screen bg-transparent p-4">
-      {renderScreen()}
+    <main className="flex items-center justify-center min-h-screen p-4">
+      {renderContent()}
     </main>
   );
 };

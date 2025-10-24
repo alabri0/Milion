@@ -30,7 +30,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onStartGame, onStartAiGame, onG
   return (
     <div className="flex flex-col items-center justify-center text-center p-8 animate-fade-in w-full max-w-lg">
       <img 
-        src="/back.jpg" 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFbnwtLuJx97SHaZndJMPd9GJTC2RgYJuObwFsNbrXXGXckhWlvkx8zQuF6fw32sQg1T2cvyb_mVV3lLGlUKCuBqLnRjxhAtJh3B9y8AXOE3XUnqvL3AmDNkiwK5Ixd7b1AsU7zKbQXBki/s1600/%D9%84%D8%B9%D8%A8%D8%A9+%D9%85%D9%86+%D8%B3%D9%8A%D8%B1%D8%A8%D8%AD+%D8%A7%D9%84%D9%85%D9%84%D9%8A%D9%88%D9%86.jpg" 
         alt="شعار اللعبة" 
         className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-amber-400 object-cover mb-6 shadow-lg animate-pop-in"
       />

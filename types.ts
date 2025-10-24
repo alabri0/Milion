@@ -23,6 +23,7 @@ export interface GameState {
   lifelines: Lifelines;
   guaranteedScore: number;
   questions: Question[];
+  gameMode: 'normal' | 'ai';
 }
 
 export enum GameScreen {

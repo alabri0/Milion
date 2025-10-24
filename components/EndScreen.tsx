@@ -6,7 +6,8 @@ interface EndScreenProps {
   score: number;
   onRestart: () => void;
   onGoHome: () => void;
-  onSaveScore: (name: string) => void;
+  // FIX: Updated onSaveScore to accept score as a parameter.
+  onSaveScore: (name: string, score: number) => void;
   leaderboard: ScoreEntry[];
   audioService: AudioService;
 }
@@ -20,7 +21,8 @@ const EndScreen: React.FC<EndScreenProps> = ({ score, onRestart, onGoHome, onSav
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
     if (playerName.trim()) {
-      onSaveScore(playerName.trim());
+      // FIX: Pass the score along with the player name.
+      onSaveScore(playerName.trim(), score);
       setScoreSaved(true);
     }
   };
@@ -40,46 +42,40 @@ const EndScreen: React.FC<EndScreenProps> = ({ score, onRestart, onGoHome, onSav
       </p>
       
       {isHighScore && !scoreSaved && (
-        <form onSubmit={handleSave} className="flex flex-col items-center gap-4 w-full max-w-sm animate-slide-in-up" style={{ animationDelay: '400ms' }}>
-            <p className="text-lg text-amber-300">لقد دخلت قائمة المتصدرين! أدخل اسمك:</p>
-            <input
-                type="text"
-                value={playerName}
-                onChange={(e) => setPlayerName(e.target.value)}
-                placeholder="اكتب اسمك هنا"
-                className="w-full p-3 bg-slate-700 border border-slate-500 rounded-lg text-center text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
-                maxLength={15}
-                required
-            />
-            <button
-                type="submit"
-                onClick={() => audioService.playClick()}
-                className="w-full px-8 py-3 bg-amber-500 hover:bg-amber-600 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
-            >
-                حفظ النتيجة
-            </button>
+        <form onSubmit={handleSave} className="flex flex-col sm:flex-row items-center gap-3 animate-slide-in-up w-full max-w-sm mb-6" style={{ animationDelay: '400ms' }}>
+          <input
+            type="text"
+            value={playerName}
+            onChange={(e) => setPlayerName(e.target.value)}
+            placeholder="أدخل اسمك"
+            className="flex-grow p-3 bg-slate-700 border border-slate-500 rounded-lg text-center text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+            maxLength={15}
+            required
+          />
+          <button
+            type="submit"
+            className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-full text-white font-bold"
+          >
+            حفظ النتيجة
+          </button>
         </form>
       )}
 
-      {(!isHighScore || scoreSaved) && (
-        <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-slide-in-up" style={{ animationDelay: '400ms' }}>
-            <button
-            onClick={() => handleButtonClick(onRestart)}
-            className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
-            >
-            إعادة اللعب
-            </button>
-            <button
-            onClick={() => handleButtonClick(onGoHome)}
-            className="px-8 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
-            >
-            العودة للرئيسية
-            </button>
-        </div>
+      {scoreSaved && (
+        <p className="text-emerald-400 text-lg mb-6 animate-fade-in">تم حفظ نتيجتك بنجاح!</p>
       )}
 
+      <div className="flex gap-4 animate-slide-in-up" style={{ animationDelay: '600ms' }}>
+        <button onClick={() => handleButtonClick(onRestart)} className="px-8 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105">
+          إعادة اللعب
+        </button>
+        <button onClick={() => handleButtonClick(onGoHome)} className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105">
+          العودة للرئيسية
+        </button>
+      </div>
     </div>
   );
 };
 
+// FIX: Added default export to fix module not found error.
 export default EndScreen;
