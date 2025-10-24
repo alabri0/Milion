@@ -156,7 +156,21 @@ const App: React.FC = () => {
         startGame('ai', aiQuestions);
     } catch (e) {
         console.error(e);
-        setError('حدث خطأ أثناء توليد الأسئلة. الرجاء المحاولة مرة أخرى أو تجربة موضوع آخر.');
+        const baseMessage = 'حدث خطأ أثناء توليد الأسئلة. الرجاء المحاولة مرة أخرى أو تجربة موضوع آخر.';
+        let detailedMessage = '';
+        if (e instanceof Error) {
+            const msg = e.message.toLowerCase();
+            if (msg.includes('api key')) {
+                detailedMessage = '(خطأ في الإعداد: مفتاح الواجهة البرمجية غير صالح أو مفقود)';
+            } else if (msg.includes('quota')) {
+                detailedMessage = '(تم تجاوز حصة الاستخدام المتاحة)';
+            } else if (msg.includes('network') || msg.includes('fetch')) {
+                detailedMessage = '(خطأ في الاتصال بالشبكة)';
+            } else if (msg.includes('json')) {
+                detailedMessage = '(تم استلام رد غير متوقع من الخادم)';
+            }
+        }
+        setError(`${baseMessage} ${detailedMessage}`.trim());
         setScreen(Screen.Home);
     } finally {
         setLoading(false);

@@ -86,6 +86,7 @@ export const generateQuestions = async (topic: string, age: number | null): Prom
 
   } catch (error) {
     console.error("Error generating questions with Gemini:", error);
-    throw new Error("Failed to generate questions from AI.");
+    // Propagate the original error for better debugging in the UI.
+    throw error;
   }
 };
