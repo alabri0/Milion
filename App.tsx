@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const [loadingMessage, setLoadingMessage] = useState<string>('...جاري تحميل بنك الأسئلة');
   const [error, setError] = useState<string | null>(null);
   const [settings, setSettings] = useState<SettingsState>({
-    timerDuration: 30,
+    timerDuration: 60,
     difficulty: 'mixed',
     backgroundMusicEnabled: true,
     soundEffectsEnabled: true,

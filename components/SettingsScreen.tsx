@@ -22,18 +22,33 @@ const categoryNames: Record<Category, string> = {
 const AboutModal = ({ onClose, audioService }: { onClose: () => void; audioService: AudioService; }) => (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 animate-fade-in" onClick={onClose}>
       <div className="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-2xl w-full max-w-2xl animate-pop-in m-4" onClick={(e) => e.stopPropagation()}>
-        <h3 className="text-3xl font-bold text-center text-amber-400 mb-6">حول اللعبة</h3>
+        <h3 className="text-3xl font-bold text-center text-amber-400 mb-6">حول لعبة "من سيربح المليون؟"</h3>
         <div className="space-y-6 text-right text-slate-200 text-lg max-h-[70vh] overflow-y-auto pr-2">
             <div>
-                <h4 className="text-2xl font-bold text-amber-300 mb-2">كيف تلعب؟</h4>
+                <h4 className="text-2xl font-bold text-amber-300 mb-2">الهدف من اللعبة</h4>
                 <p>
-                    "من سيربح المليون؟" هي لعبة معلومات عامة تختبر ثقافتك. الهدف هو الإجابة على 15 سؤالاً بشكل صحيح للوصول إلى جائزة المليون.
+                    مرحبًا بك في "من سيربح المليون؟"، التجربة الرقمية المستوحاة من البرنامج التلفزيوني العالمي الشهير. انطلق في رحلة معرفية مثيرة واختبر ثقافتك عبر 15 سؤالاً متدرج الصعوبة، من السهل إلى المليون. هدفك واضح: تسلق سلم الجوائز والوصول إلى القمة للفوز بالجائزة الكبرى!
                 </p>
-                <ul className="list-disc list-inside my-2 space-y-1">
-                    <li>تحتوي اللعبة على بنك أسئلة يضم أكثر من 500 سؤال في مجالات متنوعة.</li>
-                    <li>لديك ثلاث وسائل مساعدة: <span className="font-semibold">حذف إجابتين</span>, <span className="font-semibold">سؤال الجمهور</span>, و <span className="font-semibold">اتصال بصديق</span>.</li>
-                    <li>هناك نقاط آمنة عند السؤال الخامس (1,000) والسؤال العاشر (32,000)، تضمن لك هذا المبلغ إذا أجبت بشكل خاطئ بعد تجاوزها.</li>
+            </div>
+            <div>
+                <h4 className="text-2xl font-bold text-amber-300 mb-2">طريقة اللعب والميزات الرئيسية</h4>
+                <ul className="list-disc list-inside my-2 space-y-3">
+                    <li><strong>بنك أسئلة شامل:</strong> تحتوي اللعبة على مئات الأسئلة المختارة بعناية في مجالات متنوعة تشمل العلوم، التاريخ، الجغرافيا، الفن والأدب، الرياضة، والمعلومات الإسلامية والعامة.</li>
+                    <li><strong>وسائل المساعدة الاستراتيجية:</strong> تمامًا كما في البرنامج الأصلي، لديك ثلاث وسائل مساعدة ثمينة لمساعدتك في الأوقات الصعبة:
+                        <ul className="list-['-_'] list-inside mt-2 mr-4 space-y-1">
+                            <li><span className="font-semibold">حذف إجابتين (50:50):</span> لإزالة خيارين من الخيارات الخاطئة، مما يزيد من فرصك.</li>
+                            <li><span className="font-semibold">سؤال الجمهور:</span> احصل على إحصائية حول كيفية تصويت الجمهور الافتراضي.</li>
+                            <li><span className="font-semibold">اتصال بصديق:</span> اطلب نصيحة من صديق افتراضي للحصول على رأي ثانٍ.</li>
+                        </ul>
+                    </li>
+                    <li><strong>نقاط الأمان (الضمان):</strong> لا تخرج خالي الوفاض! اللعبة تحتوي على محطتي أمان عند السؤال الخامس (1,000) والسؤال العاشر (32,000). بمجرد الوصول إلى إحدى هذه المحطات، تضمن الحصول على قيمتها حتى لو كانت إجابتك التالية خاطئة.</li>
                 </ul>
+            </div>
+            <div>
+                <h4 className="text-2xl font-bold text-amber-300 mb-2">وضع التدريب بالذكاء الاصطناعي: قوة Gemini بين يديك</h4>
+                <p>
+                    هل ترغب في تحدي نفسك في موضوع معين؟ يتيح لك هذا الوضع الفريد توليد مجموعة كاملة من الأسئلة (15 سؤالاً) حول أي موضوع يخطر ببالك، مدعومًا بنموذج الذكاء الاصطناعي المتقدم Gemini من Google. ببساطة، أدخل موضوعًا مثل "تاريخ الدولة العباسية" أو "فيزياء الكم للمبتدئين"، ويمكنك حتى تحديد فئة عمرية مستهدفة لتخصيص صعوبة الأسئلة. إنها الطريقة المثلى للتعلم والمرح في آن واحد.
+                </p>
             </div>
             <div>
                 <h4 className="text-2xl font-bold text-amber-300 mb-2">عن المطور</h4>
@@ -171,32 +186,31 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ initialSettings, onSave
                 name="backgroundMusicEnabled"
                 checked={settings.backgroundMusicEnabled}
                 onChange={handleToggleChange}
-                className="sr-only peer" 
+                className="sr-only peer"
               />
-              <div className="w-14 h-8 bg-slate-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-amber-500/50 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600"></div>
+              <div className="w-14 h-8 bg-slate-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-amber-500/50 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600"></div>
             </label>
           </div>
-          
+
           {/* Sound Effects Setting */}
           <div className="flex justify-between items-center bg-slate-700/50 p-4 rounded-lg">
             <label htmlFor="soundEffectsEnabled" className="text-xl font-semibold text-slate-200">المؤثرات الصوتية</label>
-            <label className="relative inline-flex items-center cursor-pointer">
+             <label className="relative inline-flex items-center cursor-pointer">
               <input 
                 type="checkbox"
                 id="soundEffectsEnabled"
                 name="soundEffectsEnabled"
                 checked={settings.soundEffectsEnabled}
                 onChange={handleToggleChange}
-                className="sr-only peer" 
+                className="sr-only peer"
               />
-              <div className="w-14 h-8 bg-slate-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-amber-500/50 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600"></div>
+              <div className="w-14 h-8 bg-slate-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-amber-500/50 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600"></div>
             </label>
           </div>
-
-
-          {/* TTS Setting */}
-          <div className="flex justify-between items-center bg-slate-700/50 p-4 rounded-lg">
-            <label htmlFor="ttsMode" className="text-xl font-semibold text-slate-200">قراءة السؤال</label>
+          
+           {/* TTS Setting */}
+           <div className="flex justify-between items-center bg-slate-700/50 p-4 rounded-lg">
+            <label htmlFor="ttsMode" className="text-xl font-semibold text-slate-200">قراءة السؤال (TTS)</label>
             <select
               id="ttsMode"
               name="ttsMode"
@@ -206,35 +220,32 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ initialSettings, onSave
               className="bg-slate-900 border border-slate-600 rounded-md p-2 text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <option value="off">إيقاف</option>
-              <option value="manual">يدوي (عند الضغط)</option>
+              <option value="manual">يدوي (بالضغط على الأيقونة)</option>
               <option value="auto">تلقائي</option>
             </select>
           </div>
-          
-          {/* About Button */}
-          <div className="pt-4">
-            <button
+
+
+          {/* Action Buttons */}
+          <div className="flex flex-col-reverse sm:flex-row gap-4 pt-4">
+             <button
               type="button"
               onClick={() => { audioService.playClick(); setShowAboutModal(true); }}
-              className="w-full px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
+              className="w-full sm:w-auto px-6 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
             >
               حول اللعبة
             </button>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex gap-4 pt-6">
+            <div className="flex-grow"></div>
             <button
               type="button"
-              onClick={() => { audioService.playClick(); onCancel(); }}
-              className="flex-1 px-8 py-3 bg-slate-600 hover:bg-slate-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
+              onClick={onCancel}
+              className="w-full sm:w-auto px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
             >
               إلغاء
             </button>
             <button
               type="submit"
-              onClick={() => audioService.playClick()}
-              className="flex-1 px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
+              className="w-full sm:w-auto px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-full text-white text-xl font-bold transition-transform transform hover:scale-105"
             >
               حفظ
             </button>
