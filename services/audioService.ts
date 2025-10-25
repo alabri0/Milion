@@ -26,18 +26,40 @@ export class AudioService {
   private areSoundEffectsMuted: boolean = false;
   private isLoaded: boolean = false;
   private isLoading: boolean = false;
+  private pendingBackgroundMusic: boolean = false;
 
-  private async initAudioContext() {
-    if (this.audioContext && this.audioContext.state !== 'suspended') {
-      return;
+  private async initAndResumeAudioContext() {
+    if (this.audioContext && this.audioContext.state === 'running') {
+        return;
     }
-    try {
-      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-      if (this.audioContext.state === 'suspended') {
-        await this.audioContext.resume();
-      }
-    } catch (e) {
-      console.error("Web Audio API is not supported in this browser", e);
+    
+    if (!this.audioContext) {
+        try {
+            this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+        } catch (e) {
+            console.error("Web Audio API is not supported in this browser", e);
+            return;
+        }
+    }
+
+    if (this.audioContext.state === 'suspended') {
+        try {
+            await this.audioContext.resume();
+        } catch (e) {
+            console.error("Could not resume audio context", e);
+            return;
+        }
+    }
+    
+    if (this.audioContext.state === 'running' && !this.isLoaded && !this.isLoading) {
+        await this.loadAllSounds();
+    }
+    
+    if (this.audioContext.state === 'running' && this.pendingBackgroundMusic && !this.isBackgroundMusicMuted) {
+        if (!this.isPlaying('background')) {
+            this.playSound('background', true);
+        }
+        this.pendingBackgroundMusic = false;
     }
   }
 
@@ -69,27 +91,15 @@ export class AudioService {
     console.log("All sounds loaded.");
   }
 
-  public play(name: SoundEffect, loop: boolean = false): void {
-    if (!this.audioContext) {
-      this.initAudioContext().then(() => {
-        if (this.audioContext) {
-            this.loadAllSounds().then(() => this.playSound(name, loop));
-        }
-      });
-      return;
-    }
-    
-    if(!this.isLoaded) {
-       this.loadAllSounds().then(() => this.playSound(name, loop));
-       return;
-    }
-
-    this.playSound(name, loop);
+  private isPlaying(name: SoundEffect): boolean {
+    return this.playingSources.has(name) && this.playingSources.get(name)!.length > 0;
   }
   
   private playSound(name: SoundEffect, loop: boolean = false): void {
-    if (!this.audioContext) return;
-    
+    if (!this.audioContext || !this.isLoaded || this.audioContext.state !== 'running') {
+      return;
+    }
+
     if (name === 'background' && this.isBackgroundMusicMuted) return;
     if (name !== 'background' && this.areSoundEffectsMuted) return;
 
@@ -125,6 +135,18 @@ export class AudioService {
     }
     this.playingSources.get(name)!.push(source);
   }
+
+  public play(name: SoundEffect, loop: boolean = false): void {
+    if (name === 'background') {
+      this.pendingBackgroundMusic = true;
+    }
+
+    this.initAndResumeAudioContext().then(() => {
+        if (this.audioContext?.state === 'running' && name !== 'background') {
+            this.playSound(name, loop);
+        }
+    });
+  }
   
   public playClick(): void {
     this.play('click');
@@ -141,6 +163,7 @@ export class AudioService {
   }
 
   public stopAll(): void {
+    this.pendingBackgroundMusic = false;
     this.playingSources.forEach((sources, name) => {
       this.stop(name as SoundEffect);
     });
@@ -151,6 +174,8 @@ export class AudioService {
     this.isBackgroundMusicMuted = muted;
     if (muted) {
       this.stop('background');
+    } else if (this.pendingBackgroundMusic) {
+        this.initAndResumeAudioContext();
     }
   }
 
