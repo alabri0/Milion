@@ -29,7 +29,7 @@ const responseSchema = {
 
 export const generateQuestions = async (topic: string, age: number | null): Promise<Question[]> => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: "AIzaSyCvj6O5YVec5PMNGDLTNAWaD6iEXDQimJw" });
 
     let difficultyInstruction: string;
 
