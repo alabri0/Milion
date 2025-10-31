@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#0f172a"/>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFbnwtLuJx97SHaZndJMPd9GJTC2RgYJuObwFsNbrXXGXckhWlvkx8zQuF6fw32sQg1T2cvyb_mVV3lLGlUKCuBqLnRjxhAtJh3B9y8AXOE3XUnqvL3AmDNkiwK5Ixd7b1AsU7zKbQXBki/s192/%D9%84%D8%B9%D8%A8%D8%A9+%D9%85%D9%86+%D8%B3%D9%8A%D8%B1%D8%A8%D8%AD+%D8%A7%D9%84%D9%85%D9%84%D9%8A%D9%88%D9%86.jpg">
+
   <script type="importmap">
 {
   "imports": {
@@ -23,5 +31,18 @@
   <body class="text-white">
     <div id="root"></div>
     <script type="module" src="./index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
